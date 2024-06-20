@@ -11,8 +11,10 @@ class Redirect404Middleware:
     def __call__(self, request, exception=None):
         response = self.get_response(request)
         if response.status_code == 404 and not request.path.startswith('/admin'):
+            if getattr(request, '_redirect_handled', False):
+                return response
+            request._redirect_handled = True
             print(response.status_code)
-            print('i am here 404')
             path = request.path
             while path and path != '/':
                 try:
@@ -31,8 +33,8 @@ class RedirectNotPermittedMiddleware:
     def __call__(self, request, exception=None):
         response = self.get_response(request)
         if response.status_code == 403 and not request.path.startswith('/admin'):
-            print(response.status_code)
-            print('I am here')
+            if getattr(request, '_redirect_handled', False):
+                return response
             messages.info(request, 'You do not have access to this page.')
             return redirect('home')
         return response

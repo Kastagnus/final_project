@@ -1,8 +1,10 @@
 from datetime import timedelta
 
 from django.contrib import messages
-from django.core.exceptions import ValidationError
+from django.contrib.auth.decorators import login_required
+from django.core.exceptions import ValidationError, PermissionDenied
 from django.db import IntegrityError
+from django.http import HttpResponseForbidden
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin
 
@@ -11,6 +13,7 @@ from django.urls import reverse_lazy
 from tours.models import Tour
 from .forms import ReservationForm
 from .models import Reservation
+from django.utils.decorators import method_decorator
 
 
 class ReservationListView(ListView):
@@ -20,10 +23,17 @@ class ReservationListView(ListView):
     def get_queryset(self):
         return Reservation.objects.filter(user=self.request.user)
 
-class ReservationDetailView(DetailView):
+@method_decorator(login_required, name='dispatch')
+class ReservationDetailView(LoginRequiredMixin, DetailView):
     model = Reservation
     template_name = 'reservations/reservation_detail.html'
     context_object_name = 'reservation'
+
+    def get_object(self, queryset=None):
+        reservation = super().get_object(queryset)
+        if not self.request.user.is_staff and reservation.user != self.request.user:
+            raise PermissionDenied
+        return reservation
 
     def get_queryset(self):
         queryset = super().get_queryset()
@@ -62,20 +72,27 @@ class ReservationCreateView(LoginRequiredMixin,CreateView):
         messages.success(self.request, f'Your Confirmation has been sent to {self.request.user.email}')
 
         return super().form_valid(form)
-
-class ReservationUpdateView(UpdateView):
+@method_decorator(login_required, name='dispatch')
+class ReservationUpdateView(LoginRequiredMixin, UpdateView):
     model = Reservation
     template_name = 'reservations/reservation_update_form.html'
     fields = ['start_date', 'number_of_people', 'full_name']
     success_url = reverse_lazy('home')
     context_object_name = 'reservation'
 
+    def get_object(self, queryset=None):
+        reservation = super().get_object(queryset)
+        if not self.request.user.is_staff and reservation.user != self.request.user:
+            raise PermissionDenied
+        return reservation
+
     def get_queryset(self):
         queryset = super().get_queryset()
         if not self.request.user.is_staff:
-            queryset = queryset.filter(user=self.request.user, pk=self.kwargs['pk'])
+            queryset = queryset.filter(user=self.kwargs['user_id'], pk=self.kwargs['pk'])
             return queryset
         return queryset
+
 
 
     def form_valid(self, form):
@@ -88,15 +105,23 @@ class ReservationUpdateView(UpdateView):
 
         return super().form_valid(form)
 # რეზერვაციის დაქენსელება
-class ReservationDeleteView(DeleteView):
+
+@method_decorator(login_required, name='dispatch')
+class ReservationDeleteView(LoginRequiredMixin, DeleteView):
     model = Reservation
     template_name = 'reservations/reservation_confirm_delete.html'
     success_url = reverse_lazy('home')
 
+    def get_object(self, queryset=None):
+        reservation = super().get_object(queryset)
+        if not self.request.user.is_staff and reservation.user != self.request.user:
+            raise PermissionDenied
+        return reservation
+
     def get_queryset(self):
         queryset = super().get_queryset()
         if not self.request.user.is_staff:
-            queryset = queryset.filter(user=self.request.user, pk=self.kwargs['pk'])
+            queryset = queryset.filter(user=self.kwargs['user_id'], pk=self.kwargs['pk'])
         return queryset
 
     def post(self, request, *args, **kwargs):

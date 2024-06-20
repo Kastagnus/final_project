@@ -24,20 +24,6 @@ class MyLoginView(LoginView):
     def get_success_url(self):
         return reverse_lazy('home')
 
-    # def form_invalid(self, form):
-    #     username = form.cleaned_data.get('username')
-    #     User = get_user_model()
-    #     try:
-    #         user = User.objects.get(username=username)
-    #     except User.DoesNotExist:
-    #         try:
-    #             user = User.objects.get(email=username)
-    #         except User.DoesNotExist:
-    #             user = None
-    #     if user and not user.is_active:
-    #         return redirect('resend_activation_email')
-    #     messages.error(self.request, 'Invalid username or password')
-    #     return self.render_to_response(self.get_context_data(form=form))
     def form_invalid(self, form):
         username = form.cleaned_data.get('username')
         UserModel = get_user_model()
