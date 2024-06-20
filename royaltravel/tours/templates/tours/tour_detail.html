@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <img class="card-img-top" src="{{ tour.poster.url }}" alt="{{ tour.title }}">
+                <div class="card-body">
+                    <h1 class="card-title">{{ tour.title }}</h1>
+                    <p class="card-text">
+                        <strong>Duration:</strong> {{ tour.duration }} days
+                    </p>
+                    <p class="card-text">
+                        <strong>Description:</strong> {{ tour.description }}
+                    </p>
+                    <p class="card-text">
+                        <strong>Price per person:</strong> ${{ tour.price_per_person }}
+                    </p>
+                    <a href="{% url 'reservation-create' tour.pk %}" class="btn btn-primary">
+                        <i class="bi bi-plus-circle"></i> Book Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

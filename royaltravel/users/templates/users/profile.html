@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="center" xmlns="http://www.w3.org/1999/html">
+    <form method="POST" enctype="multipart/form-data" class="card">
+        {% csrf_token %}
+
+        {% if user.profile %}
+            <img src="{{ user.profile.avatar.url }}" alt="{{ user.username }}" class="avatar" />
+        {% endif %}
+
+        <h2 class="text-center">username: {{ user.username | title }}</h2>
+        <p class="text-center">Name: {{ user.first_name }} {{ user.last_name}}</p>
+        <p class="text-center"><a href="mailto:{{ user.email }}">{{ user.email }}</a></p>
+        <p class="small" >{{ user.profile.bio }}</p>
+        <hr>
+        <label for="first_name">Name</label>
+        <input type="text" id="first_name" name="first_name" value="{{ user_form.first_name.value }}"/>
+        <label for="last_name">Surname</label>
+        <input type="text" id="last_name" name="last_name" value="{{ user_form.last_name.value }}"/>
+        <label for="bio">Update your Bio</label>
+        <input type="text" id="bio" name="bio" value="{{ profile_form.bio.value }}"/>
+
+        <label for="avatar">Avatar:</label>
+        <input type="file" name="avatar" id="avatar">
+
+        <button type="submit" class="btn btn-primary full-width">Update Profile</button>
+    </form>
+</div>
+
+{% endblock content %}

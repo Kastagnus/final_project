@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{%load static %}
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="about-us">
+                <h1 class="text-center">About Us</h1>
+                <p class="lead text-center">Welcome to Royal Travel, your trusted partner in unforgettable travel experiences.</p>
+                <img src="{% static 'images/about_us.jpg' %}" alt="About Us" class="img-fluid my-4">
+                <h2>Our Story</h2>
+                <p>Founded in 2020, Royal Travel was born out of a passion for exploration and a desire to create memorable journeys for our clients. Our founder, Jane Doe, envisioned a travel agency that goes beyond the ordinary, offering personalized and exceptional travel experiences.</p>
+                
+                <h2>Our Mission</h2>
+                <p>At Royal Travel, our mission is to provide unique and customized travel experiences that cater to the individual preferences and needs of our clients. We strive to make every trip an extraordinary adventure, filled with unforgettable moments and cherished memories.</p>
+                
+                <h2>Why Choose Us</h2>
+                <ul>
+                    <li><strong>Expertise:</strong> Our team of experienced travel consultants are passionate about travel and have extensive knowledge of destinations around the world.</li>
+                    <li><strong>Personalized Service:</strong> We take the time to understand your preferences and tailor our services to meet your specific needs.</li>
+                    <li><strong>Quality Assurance:</strong> We partner with trusted and reputable service providers to ensure a seamless and enjoyable travel experience.</li>
+                    <li><strong>24/7 Support:</strong> Our dedicated support team is available around the clock to assist you with any queries or concerns during your trip.</li>
+                </ul>
+                
+                <h2>Our Services</h2>
+                <p>We offer a wide range of travel services to cater to all your needs:</p>
+                <ul>
+                    <li>Customized Tour Packages</li>
+                    <li>Hotel Bookings</li>
+                    <li>Flight Reservations</li>
+                    <li>Travel Insurance</li>
+                    <li>Corporate Travel Management</li>
+                    <li>Group Tours</li>
+                </ul>
+                
+                <h2>Contact Us</h2>
+                <p>If you have any questions or would like to start planning your next adventure, feel free to reach out to us:</p>
+                <p>
+                    <strong>Email:</strong> info@royaltravel.ge<br>
+                    <strong>Phone:</strong> Not Available<br>
+                    <strong>Address:</strong> Tbilisi, Georgia
+                </p>
+                <p class="text-center">We look forward to helping you create unforgettable travel experiences!</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

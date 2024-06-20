@@ -1,0 +1,96 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Tours</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                .pagination {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .pagination a, .pagination span {
+            margin: 0 5px;
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            text-decoration: none;
+            color: #333;
+        }
+        .pagination .current {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Manage Tours</h1>
+    <div class="align-left">
+	<a href="{% url 'tour-create' %}"><i class="bi bi-plus-circle"></i> Create Tour</a>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Tour ID</th>
+                <th>Title</th>
+                <th>Price per person ($)</th>
+                <th>Duration</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for tour in page_obj %}
+            <tr>
+                <td>{{ tour.pk }}</td>
+                <td>{{ tour.title }}</td>
+                <td>{{ tour.price_per_person }}</td>
+                <td>{{ tour.duration }}</td>
+                <td>
+
+                    <a href="{% url 'tour-update' tour.pk %}">Edit</a> |
+                    <a href="{% url 'tour-delete' tour.pk %}" onclick="return confirm('Are you sure you want to cancel this reservation?');">Delete</a>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="9">No reservations found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div class="pagination">
+        <span class="step-links">
+            {% if page_obj.has_previous %}
+                <a href="?page=1">&laquo; first</a>
+                <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+            {% endif %}
+
+            <span class="current">
+                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+            </span>
+
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">next</a>
+                <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+            {% endif %}
+        </span>
+    </div>
+</body>
+</html>
+{% endblock content %}

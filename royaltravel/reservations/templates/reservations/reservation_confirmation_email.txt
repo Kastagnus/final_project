@@ -1,0 +1,15 @@
+Dear {{ reservation.full_name }},
+
+Thank you for your reservation. Here are the details of your reservation:
+
+Reservation Number: {{ reservation.reservation_reference }}
+Full Name: {{ reservation.full_name }}
+Tour: {{ reservation.tour.title }}
+Start Date: {{ reservation.start_date }}
+End Date: {{ reservation.end_date }}
+Itinerary: {{ reservation.tour.description }}
+
+A PDF document with your reservation details is attached to this email.
+
+Best regards,
+Your Company

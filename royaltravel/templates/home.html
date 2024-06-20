@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <section class="feature" style="background: url('/static/images/feature.jpg') no-repeat center center; background-size: cover;">
+        <div class="feature-overlay">
+            <div class="container text-center d-flex align-items-center justify-content-center" style="height: 100vh;">
+                <div class="feature-content">
+                    <h1>Royal Travel</h1>
+                    <p>Your holiday planner</p>
+                    <a class="btn btn-primary cta" href="{% url 'tour-list' %}">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

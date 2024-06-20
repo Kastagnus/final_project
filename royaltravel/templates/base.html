@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+        <title>Royal Travel</title>
+        <style>
+            /* Dropdown container */
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            /* Dropdown content (hidden by default) */
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            /* Links inside the dropdown */
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            /* Change color of dropdown links on hover */
+            .dropdown-content a:hover {
+                background-color: #f1f1f1;
+            }
+
+            /* Show the dropdown menu on hover */
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            /* Change the background color of the dropdown button when the dropdown content is shown */
+            .dropdown:hover .dropbtn {
+                background-color: #3e8e41;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <nav class="nav">
+                    <a href="{% url 'home' %}"><i class="bi bi-house-fill"></i> Home</a>
+                    <a href="{% url 'about' %}"><i></i> About Us</a>
+                    <a href="{% url 'tour-list' %}"> Tours</a>
+                    <a href="{% url 'gallery' %}" ><i></i> Gallery</a>
+                    {% if request.user.is_authenticated %}
+                        <a href="{% url 'reservation-list' %}"><i class="bi bi-list-task"></i> My Bookings</a>
+                        {% if request.user.is_staff %}
+                            <div class="dropdown">
+                                <a class="dropbtn"><i class="bi bi-plus-circle"></i> Property Manager</a>
+                                <div class="dropdown-content">
+                                    <a href="{% url 'property-tours' %}">Tours</a>
+                                    <a href="{% url 'property-reservations' %}">Reservations</a>
+                                </div>
+                            </div>
+                        {% endif %}
+                        <a title="Update my profile" href="{% url 'profile' %}">Hi {{request.user | title}}</a>
+                        <form method="POST" action="{% url 'logout' %}" style="display: inline;">
+                            {% csrf_token %}
+                            <button class="btn btn-outline">Logout</button>
+                        </form>
+                    {% else %}
+                        <a href="{% url 'login' %}" class="btn btn-outline">Login</a>
+                        <a href="{% url 'register' %}" class="btn btn-primary">Join Now</a>
+                    {% endif %}
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-{{ message.tags }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+
+                {% block content %}
+                {% endblock content %}
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <p>© Copyright {% now "Y" %} by <a href="https://www.royaltravl.ge">Royal Travel</a></p>
+            </div>
+        </footer>
+    </body>
+</html>

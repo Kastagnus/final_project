@@ -1,0 +1,119 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Reservations</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+                .pagination {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .pagination a, .pagination span {
+            margin: 0 5px;
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            text-decoration: none;
+            color: #333;
+        }
+        .pagination .current {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Manage Reservations</h1>
+    <form method="get">
+        <div>
+            <label for="reservation_number">Reservation Number:</label>
+            {{ filter.form.reservation_reference }}
+        </div>
+        <div>
+            <label for="status">Status:</label>
+            {{ filter.form.status }}
+        </div>
+        <button type="submit">Filter</button>
+    </form>
+    <form method="get" action="{% url 'export-reservations' %}">
+        {% csrf_token %}
+        {% for key, value in request.GET.items %}
+            <input type="hidden" name="{{ key }}" value="{{ value }}">
+        {% endfor %}
+        <button type="submit">Export to Excel</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Reservation Number</th>
+                <th>User</th>
+                <th>Tour Title</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Number of People</th>
+                <th>Status</th>
+                <th>Total Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for reservation in page_obj %}
+            <tr>
+                <td>{{ reservation.reservation_reference}}</td>
+                <td>{{ reservation.user.username }}</td>
+                <td>{{ reservation.tour.title }}</td>
+                <td>{{ reservation.start_date }}</td>
+                <td>{{ reservation.end_date }}</td>
+                <td>{{ reservation.number_of_people }}</td>
+                <td>{{ reservation.status }}</td>
+                <td>{{ reservation.total_price }}</td>
+                <td>
+                    <a href="{% url 'reservation-detail' reservation.user.pk reservation.pk %}">View</a> |
+                    <a href="{% url 'reservation-update' reservation.user.pk reservation.pk %}">Edit</a> |
+                    <a href="{% url 'reservation-cancel' reservation.user.pk reservation.pk %}" onclick="return confirm('Are you sure you want to cancel this reservation?');">Cancel</a>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="9">No reservations found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div class="pagination">
+        <span class="step-links">
+            {% if page_obj.has_previous %}
+                <a href="?page=1">&laquo; first</a>
+                <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+            {% endif %}
+
+            <span class="current">
+                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+            </span>
+
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">next</a>
+                <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+            {% endif %}
+        </span>
+    </div>
+</body>
+</html>
+{% endblock content %}

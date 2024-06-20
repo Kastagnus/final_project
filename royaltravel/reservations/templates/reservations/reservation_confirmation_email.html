@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation Confirmation</title>
+</head>
+<body>
+    <h1>Reservation Confirmation</h1>
+    <p>Dear {{ reservation.full_name }},</p>
+    <p>Thank you for your reservation. Here are the details of your reservation:</p>
+    <ul>
+        <li>Reservation Number: {{ reservation.reservation_reference }}</li>
+        <li>Full Name: {{ reservation.full_name }}</li>
+        <li>Tour: {{ reservation.tour.title }}</li>
+        <li>Start Date: {{ reservation.start_date }}</li>
+        <li>End Date: {{ reservation.end_date }}</li>
+        <li>Itinerary: {{ reservation.tour.description }}</li>
+
+    </ul>
+    <p>A PDF document with your reservation details is attached to this email.</p>
+    <p>Best regards,</p>
+    <p>Royal Travel</p>
+</body>
+</html>

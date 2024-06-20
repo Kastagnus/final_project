@@ -1,0 +1,1308 @@
+File C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\context_processors.py first seen with mtime 1718354190.1383026
+File C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\_itertools.py first seen with mtime 1701973214.0
+File C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\tzdata\zoneinfo\__init__.py first seen with mtime 1718354183.9133294
+File C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\conf\locale\en\formats.py first seen with mtime 1718354185.0956533
+File C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\importlib\readers.py first seen with mtime 1701973214.0
+File C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\contrib\staticfiles\storage.py first seen with mtime 1718354189.664533
+File C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\contrib\messages\storage\cookie.py first seen with mtime 1718354188.4222462
+File C:\Users\ucha9\PycharmProjects\royaltravel\users\authentication.py first seen with mtime 1718452682.8781407
+File C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\contrib\auth\context_processors.py first seen with mtime 1718354186.6069417
+File C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\contrib\messages\storage\fallback.py first seen with mtime 1718354188.4232457
+File C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\contrib\sessions\serializers.py first seen with mtime 1718354188.9989147
+File C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\tzdata\__init__.py first seen with mtime 1718354183.870281
+File C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\readers.py first seen with mtime 1701973214.0
+File C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\contrib\messages\storage\session.py first seen with mtime 1718354188.4242454
+File C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\conf\locale\en\__init__.py first seen with mtime 1718354185.094654
+File C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\contrib\messages\context_processors.py first seen with mtime 1718354188.4132512
+(0.015) SELECT "tours_tour"."id", "tours_tour"."title", "tours_tour"."duration", "tours_tour"."description", "tours_tour"."annotation", "tours_tour"."price_per_person", "tours_tour"."poster" F
+ROM "tours_tour" WHERE "tours_tour"."id" = 6 LIMIT 21; args=(6,); alias=default
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-06-18T22:56:4
+7.286561+00:00'::timestamptz AND "django_session"."session_key" = '5pj9r8zwmz0g7vahasmnu4faed74kx0b') LIMIT 21; args=(datetime.datetime(2024, 6, 18, 22, 56, 47, 286561, tzinfo=datetime.timezon
+e.utc), '5pj9r8zwmz0g7vahasmnu4faed74kx0b'); alias=default
+(0.000) SELECT "users_customuser"."id", "users_customuser"."password", "users_customuser"."last_login", "users_customuser"."is_superuser", "users_customuser"."username", "users_customuser"."fi
+rst_name", "users_customuser"."last_name", "users_customuser"."is_staff", "users_customuser"."is_active", "users_customuser"."date_joined", "users_customuser"."email", "users_customuser"."last
+_token_generated" FROM "users_customuser" WHERE "users_customuser"."id" = 52 LIMIT 21; args=(52,); alias=default
+"GET /tours/6/ HTTP/1.1" 200 3135
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\urls\resolvers.py", line 725, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel
+\\users\\urls.py'> (None:None) ''>, <URLPattern 'login/' [name='login']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None)
+ ''>, <URLPattern 'register/' [name='register']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'logou
+t/' [name='logout']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset/' [name='password_
+reset']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset/done/' [name='password_reset_d
+one']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset-confirm/<uidb64>/<token>/' [name
+='password_reset_confirm']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset-complete/' 
+[name='password_reset_complete']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'activate/<uidb64>/<t
+oken>/' [name='activate']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'account_activation_sent/' [
+name='account_activation_sent']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'resend_activation_ema
+il' [name='resend_activation_email']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'profile/' [name=
+'profile']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module '
+tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/' [name='tour-list']>], [<URLResolver <module 'tours.urls' from 'C:\\User
+s\\ucha9\\PycharmProjects\\royaltravel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/<int:pk>/' [name='tour-detail']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\Pycha
+rmProjects\\royaltravel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/create/' [name='tour-create']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royal
+travel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/<int:pk>/update/' [name='tour-update']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\
+tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/<int:pk>/delete/' [name='tour-delete']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\tours\\u
+rls.py'> (None:None) ''>, <URLPattern 'property/tours/' [name='property-tours']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\tours\\urls.py'> (No
+ne:None) ''>, <URLPattern 'poperty/reservations/' [name='property-reservations']>], [<URLResolver <module 'reservations.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\reservations
+\\urls.py'> (None:None) 'reservations/'>], [<URLPattern '^media/(?P<path>.*)$'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\urls\resolvers.py", line 725, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel
+\\users\\urls.py'> (None:None) ''>, <URLPattern 'login/' [name='login']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None)
+ ''>, <URLPattern 'register/' [name='register']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'logou
+t/' [name='logout']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset/' [name='password_
+reset']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset/done/' [name='password_reset_d
+one']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset-confirm/<uidb64>/<token>/' [name
+='password_reset_confirm']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset-complete/' 
+[name='password_reset_complete']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'activate/<uidb64>/<t
+oken>/' [name='activate']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'account_activation_sent/' [
+name='account_activation_sent']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'resend_activation_ema
+il' [name='resend_activation_email']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'profile/' [name=
+'profile']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module '
+tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/' [name='tour-list']>], [<URLResolver <module 'tours.urls' from 'C:\\User
+s\\ucha9\\PycharmProjects\\royaltravel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/<int:pk>/' [name='tour-detail']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\Pycha
+rmProjects\\royaltravel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/create/' [name='tour-create']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royal
+travel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/<int:pk>/update/' [name='tour-update']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\
+tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/<int:pk>/delete/' [name='tour-delete']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\tours\\u
+rls.py'> (None:None) ''>, <URLPattern 'property/tours/' [name='property-tours']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\tours\\urls.py'> (No
+ne:None) ''>, <URLPattern 'poperty/reservations/' [name='property-reservations']>], [<URLResolver <module 'reservations.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\reservations
+\\urls.py'> (None:None) 'reservations/'>], [<URLPattern '^media/(?P<path>.*)$'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'reservations.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\reservations\\urls.py'
+> (None:None) 'reservations/'>
+"GET /favicon.ico HTTP/1.1" 302 0
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-06-18T22:56:4
+7.442955+00:00'::timestamptz AND "django_session"."session_key" = '5pj9r8zwmz0g7vahasmnu4faed74kx0b') LIMIT 21; args=(datetime.datetime(2024, 6, 18, 22, 56, 47, 442955, tzinfo=datetime.timezon
+e.utc), '5pj9r8zwmz0g7vahasmnu4faed74kx0b'); alias=default
+(0.000) SELECT "users_customuser"."id", "users_customuser"."password", "users_customuser"."last_login", "users_customuser"."is_superuser", "users_customuser"."username", "users_customuser"."fi
+rst_name", "users_customuser"."last_name", "users_customuser"."is_staff", "users_customuser"."is_active", "users_customuser"."date_joined", "users_customuser"."email", "users_customuser"."last
+_token_generated" FROM "users_customuser" WHERE "users_customuser"."id" = 52 LIMIT 21; args=(52,); alias=default
+"GET / HTTP/1.1" 200 3105
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-06-18T22:57:0
+6.722439+00:00'::timestamptz AND "django_session"."session_key" = '5pj9r8zwmz0g7vahasmnu4faed74kx0b') LIMIT 21; args=(datetime.datetime(2024, 6, 18, 22, 57, 6, 722439, tzinfo=datetime.timezone
+.utc), '5pj9r8zwmz0g7vahasmnu4faed74kx0b'); alias=default
+(0.000) SELECT "users_customuser"."id", "users_customuser"."password", "users_customuser"."last_login", "users_customuser"."is_superuser", "users_customuser"."username", "users_customuser"."fi
+rst_name", "users_customuser"."last_name", "users_customuser"."is_staff", "users_customuser"."is_active", "users_customuser"."date_joined", "users_customuser"."email", "users_customuser"."last
+_token_generated" FROM "users_customuser" WHERE "users_customuser"."id" = 52 LIMIT 21; args=(52,); alias=default
+"GET /reservations/create/6/ HTTP/1.1" 200 3990
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\urls\resolvers.py", line 725, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel
+\\users\\urls.py'> (None:None) ''>, <URLPattern 'login/' [name='login']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None)
+ ''>, <URLPattern 'register/' [name='register']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'logou
+t/' [name='logout']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset/' [name='password_
+reset']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset/done/' [name='password_reset_d
+one']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset-confirm/<uidb64>/<token>/' [name
+='password_reset_confirm']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset-complete/' 
+[name='password_reset_complete']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'activate/<uidb64>/<t
+oken>/' [name='activate']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'account_activation_sent/' [
+name='account_activation_sent']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'resend_activation_ema
+il' [name='resend_activation_email']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'profile/' [name=
+'profile']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module '
+tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/' [name='tour-list']>], [<URLResolver <module 'tours.urls' from 'C:\\User
+s\\ucha9\\PycharmProjects\\royaltravel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/<int:pk>/' [name='tour-detail']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\Pycha
+rmProjects\\royaltravel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/create/' [name='tour-create']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royal
+travel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/<int:pk>/update/' [name='tour-update']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\
+tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/<int:pk>/delete/' [name='tour-delete']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\tours\\u
+rls.py'> (None:None) ''>, <URLPattern 'property/tours/' [name='property-tours']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\tours\\urls.py'> (No
+ne:None) ''>, <URLPattern 'poperty/reservations/' [name='property-reservations']>], [<URLResolver <module 'reservations.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\reservations
+\\urls.py'> (None:None) 'reservations/'>], [<URLPattern '^media/(?P<path>.*)$'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\urls\resolvers.py", line 725, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel
+\\users\\urls.py'> (None:None) ''>, <URLPattern 'login/' [name='login']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None)
+ ''>, <URLPattern 'register/' [name='register']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'logou
+t/' [name='logout']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset/' [name='password_
+reset']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset/done/' [name='password_reset_d
+one']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset-confirm/<uidb64>/<token>/' [name
+='password_reset_confirm']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset-complete/' 
+[name='password_reset_complete']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'activate/<uidb64>/<t
+oken>/' [name='activate']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'account_activation_sent/' [
+name='account_activation_sent']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'resend_activation_ema
+il' [name='resend_activation_email']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'profile/' [name=
+'profile']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module '
+tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/' [name='tour-list']>], [<URLResolver <module 'tours.urls' from 'C:\\User
+s\\ucha9\\PycharmProjects\\royaltravel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/<int:pk>/' [name='tour-detail']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\Pycha
+rmProjects\\royaltravel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/create/' [name='tour-create']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royal
+travel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/<int:pk>/update/' [name='tour-update']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\
+tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/<int:pk>/delete/' [name='tour-delete']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\tours\\u
+rls.py'> (None:None) ''>, <URLPattern 'property/tours/' [name='property-tours']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\tours\\urls.py'> (No
+ne:None) ''>, <URLPattern 'poperty/reservations/' [name='property-reservations']>], [<URLResolver <module 'reservations.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\reservations
+\\urls.py'> (None:None) 'reservations/'>], [<URLPattern '^media/(?P<path>.*)$'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'reservations.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\reservations\\urls.py'
+> (None:None) 'reservations/'>
+"GET /favicon.ico HTTP/1.1" 302 0
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-06-18T22:57:0
+7.028611+00:00'::timestamptz AND "django_session"."session_key" = '5pj9r8zwmz0g7vahasmnu4faed74kx0b') LIMIT 21; args=(datetime.datetime(2024, 6, 18, 22, 57, 7, 28611, tzinfo=datetime.timezone.
+utc), '5pj9r8zwmz0g7vahasmnu4faed74kx0b'); alias=default
+(0.000) SELECT "users_customuser"."id", "users_customuser"."password", "users_customuser"."last_login", "users_customuser"."is_superuser", "users_customuser"."username", "users_customuser"."fi
+rst_name", "users_customuser"."last_name", "users_customuser"."is_staff", "users_customuser"."is_active", "users_customuser"."date_joined", "users_customuser"."email", "users_customuser"."last
+_token_generated" FROM "users_customuser" WHERE "users_customuser"."id" = 52 LIMIT 21; args=(52,); alias=default
+"GET / HTTP/1.1" 200 3105
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-06-18T22:58:0
+9.976367+00:00'::timestamptz AND "django_session"."session_key" = '5pj9r8zwmz0g7vahasmnu4faed74kx0b') LIMIT 21; args=(datetime.datetime(2024, 6, 18, 22, 58, 9, 976367, tzinfo=datetime.timezone
+.utc), '5pj9r8zwmz0g7vahasmnu4faed74kx0b'); alias=default
+(0.016) SELECT "users_customuser"."id", "users_customuser"."password", "users_customuser"."last_login", "users_customuser"."is_superuser", "users_customuser"."username", "users_customuser"."fi
+rst_name", "users_customuser"."last_name", "users_customuser"."is_staff", "users_customuser"."is_active", "users_customuser"."date_joined", "users_customuser"."email", "users_customuser"."last
+_token_generated" FROM "users_customuser" WHERE "users_customuser"."id" = 52 LIMIT 21; args=(52,); alias=default
+(0.000) SELECT "tours_tour"."id", "tours_tour"."title", "tours_tour"."duration", "tours_tour"."description", "tours_tour"."annotation", "tours_tour"."price_per_person", "tours_tour"."poster" F
+ROM "tours_tour" WHERE "tours_tour"."id" = 6 LIMIT 21; args=(6,); alias=default
+(0.000) SELECT 1 AS "a" FROM "reservations_reservation" WHERE ("reservations_reservation"."end_date" > '2024-12-19'::date AND "reservations_reservation"."start_date" < '2024-12-29'::date AND "
+reservations_reservation"."status" = 'active' AND "reservations_reservation"."tour_id" = 6 AND "reservations_reservation"."user_id" = 52 AND NOT ("reservations_reservation"."reservation_number
+" = 52)) LIMIT 1; args=(1, datetime.date(2024, 12, 19), datetime.date(2024, 12, 29), 'active', 6, 52, 52); alias=default
+(0.000) INSERT INTO "reservations_reservation" ("user_id", "reservation_reference", "start_date", "end_date", "number_of_people", "full_name", "total_price", "tour_id", "status") VALUES (52, '
+', '2024-12-19'::date, '2024-12-28'::date, 1, 'Ucha Khmaladze', 50, 6, 'active') RETURNING "reservations_reservation"."reservation_number"; args=(52, '', datetime.date(2024, 12, 19), datetime.
+date(2024, 12, 28), 1, 'Ucha Khmaladze', Decimal('50'), 6, 'active'); alias=default
+(0.000) UPDATE "reservations_reservation" SET "user_id" = 52, "reservation_reference" = 'RES000036', "start_date" = '2024-12-19'::date, "end_date" = '2024-12-28'::date, "number_of_people" = 1,
+ "full_name" = 'Ucha Khmaladze', "total_price" = 50, "tour_id" = 6, "status" = 'active' WHERE "reservations_reservation"."reservation_number" = 36; args=(52, 'RES000036', datetime.date(2024, 1
+2, 19), datetime.date(2024, 12, 28), 1, 'Ucha Khmaladze', Decimal('50'), 6, 'active', 36); alias=default
+File C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\smtplib.py first seen with mtime 1701973214.0
+File C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\mail\backends\__init__.py first seen with mtime 1718354189.7614777
+File C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\_strptime.py first seen with mtime 1701973214.0
+File C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\mail\backends\base.py first seen with mtime 1718354189.7624772
+File C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\mail\backends\smtp.py first seen with mtime 1718354189.7734702
+(0.000) SELECT "reservations_reservation"."user_id", "reservations_reservation"."reservation_number", "reservations_reservation"."reservation_reference", "reservations_reservation"."start_date
+", "reservations_reservation"."end_date", "reservations_reservation"."number_of_people", "reservations_reservation"."full_name", "reservations_reservation"."total_price", "reservations_reserva
+tion"."tour_id", "reservations_reservation"."status" FROM "reservations_reservation" WHERE ("reservations_reservation"."end_date" > '2024-12-19'::date AND "reservations_reservation"."start_dat
+e" < '2024-12-29'::date AND "reservations_reservation"."status" = 'active' AND "reservations_reservation"."tour_id" = 6 AND "reservations_reservation"."user_id" = 52 AND NOT ("reservations_res
+ervation"."reservation_number" = 52)) LIMIT 21; args=(datetime.date(2024, 12, 19), datetime.date(2024, 12, 29), 'active', 6, 52, 52); alias=default
+(0.000) SELECT "users_customuser"."id", "users_customuser"."password", "users_customuser"."last_login", "users_customuser"."is_superuser", "users_customuser"."username", "users_customuser"."fi
+rst_name", "users_customuser"."last_name", "users_customuser"."is_staff", "users_customuser"."is_active", "users_customuser"."date_joined", "users_customuser"."email", "users_customuser"."last
+_token_generated" FROM "users_customuser" WHERE "users_customuser"."id" = 52 LIMIT 21; args=(52,); alias=default
+Exception while resolving variable 'exception_notes' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\PycharmProjects\royaltravel\reservations\views.py", line 55, in form_valid
+    return super().form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\views\generic\edit.py", line 133, in form_valid
+    self.object = form.save()
+                  ^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\forms\models.py", line 552, in save
+    self.instance.save()
+  File "C:\Users\ucha9\PycharmProjects\royaltravel\reservations\models.py", line 36, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\db\models\base.py", line 924, in save_base
+    post_save.send(
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\dispatch\dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\PycharmProjects\royaltravel\reservations\signals.py", line 10, in generate_reference_code
+    instance.send_confirmation_email()
+  File "C:\Users\ucha9\PycharmProjects\royaltravel\reservations\models.py", line 56, in send_confirmation_email
+    email.send()
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 852, in create_connection
+    raise exceptions[0]
+  File "C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 837, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host 
+has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'exception_notes'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'exception_notes'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'exception_notes'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [exception_notes] in [{'True': True, 'False': False, 'None': None}, {'is_email': False, 'unicode_hint': '', 'frames': [{'exc_ca
+use': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x0000017845A2B3C0>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\djan
+go\\core\\handlers\\exception.py', 'function': 'inner', 'lineno': 55, 'vars': [('request', "<WSGIRequest: POST '/reservations/create/6/'>"), ('exc', "TimeoutError(10060, 'A connection attempt 
+failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond', None, 10060, None)"), ('get_
+response', '<bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x0000017843BB7FE0>>')], 'id': 1616075994048, 'pre_context': ['', '        return inner'
+, '    else:', '', '        @wraps(get_response)', '        def inner(request):', '            try:'], 'context_line': '                response = get_response(request)', 'post_context': ['   
+         except Exception as exc:', '                response = response_for_exception(request, exc)', '            return response', '', '        return inner', ''], 'pre_context_lineno': 48,
+ 'colno': '\n                               ^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n               ^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback
+ object at 0x0000017845A2BF80>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\core\\handlers\\base.py', 'function': '_get_response
+', 'lineno': 197, 'vars': [('self', '<django.core.handlers.wsgi.WSGIHandler object at 0x0000017843BB7FE0>'), ('request', "<WSGIRequest: POST '/reservations/create/6/'>"), ('response', 'None'),
+ ('callback', '<function View.as_view.<locals>.view at 0x0000017845374720>'), ('callback_args', '()'), ('callback_kwargs', "{'tour_id': 6}"), ('middleware_method', '<bound method CsrfViewMiddl
+eware.process_view of <CsrfViewMiddleware get_response=convert_exception_to_response.<locals>.inner>>'), ('wrapped_callback', '<function View.as_view.<locals>.view at 0x0000017845374720>')], '
+id': 1616075997056, 'pre_context': ['', '        if response is None:', '            wrapped_callback = self.make_view_atomic(callback)', '            # If it is an asynchronous view, run it i
+n a subthread.', '            if iscoroutinefunction(wrapped_callback):', '                wrapped_callback = async_to_sync(wrapped_callback)', '            try:'], 'context_line': '
+      response = wrapped_callback(request, *callback_args, **callback_kwargs)', 'post_context': ['            except Exception as e:', '                response = self.process_exception_by_mid
+dleware(e, request)', '                if response is None:', '                    raise', '', '        # Complain if the view returned None (a common error).'], 'pre_context_lineno': 190, 'co
+lno': '\n                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x0000017845A2BA40>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\
+site-packages\\django\\views\\generic\\base.py', 'function': 'view', 'lineno': 104, 'vars': [('request', "<WSGIRequest: POST '/reservations/create/6/'>"), ('args', '()'), ('kwargs', "{'tour_id
+': 6}"), ('self', '<reservations.views.ReservationCreateView object at 0x0000017845424AA0>'), ('cls', "<class 'reservations.views.ReservationCreateView'>"), ('initkwargs', '{}')], 'id': 161607
+5995712, 'pre_context': ['            self = cls(**initkwargs)', '            self.setup(request, *args, **kwargs)', '            if not hasattr(self, "request"):', '                raise Attr
+ibuteError(', '                    "%s instance has no \'request\' attribute. Did you override "', '                    "setup() and forget to call super()?" % cls.__name__', '
+)'], 'context_line': '            return self.dispatch(request, *args, **kwargs)', 'post_context': ['', '        view.view_class = cls', '        view.view_initkwargs = initkwargs', '', '     
+   # __name__ and __qualname__ are intentionally left unchanged as', '        # view_class should be used to robustly determine the name of the view'], 'pre_context_lineno': 97, 'colno': '\n  
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': 
+<traceback object at 0x0000017845883600>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\contrib\\auth\\mixins.py', 'function': 'di
+spatch', 'lineno': 73, 'vars': [('self', '<reservations.views.ReservationCreateView object at 0x0000017845424AA0>'), ('request', "<WSGIRequest: POST '/reservations/create/6/'>"), ('args', '()'
+), ('kwargs', "{'tour_id': 6}"), ('__class__', "<class 'django.contrib.auth.mixins.LoginRequiredMixin'>")], 'id': 1616074257920, 'pre_context': ['', 'class LoginRequiredMixin(AccessMixin):', '
+    """Verify that the current user is authenticated."""', '', '    def dispatch(self, request, *args, **kwargs):', '        if not request.user.is_authenticated:', '            return self.ha
+ndle_no_permission()'], 'context_line': '        return super().dispatch(request, *args, **kwargs)', 'post_context': ['', '', 'class PermissionRequiredMixin(AccessMixin):', '    """Verify that
+ the current user has all specified permissions."""', '', '    permission_required = None'], 'pre_context_lineno': 66, 'colno': '\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+', 'tb_area_colno': '\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x0000017845A2B640>, 'type': 'django'
+, 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\views\\generic\\base.py', 'function': 'dispatch', 'lineno': 143, 'vars': [('self', '<reservations.vi
+ews.ReservationCreateView object at 0x0000017845424AA0>'), ('request', "<WSGIRequest: POST '/reservations/create/6/'>"), ('args', '()'), ('kwargs', "{'tour_id': 6}"), ('handler', '<bound metho
+d BaseCreateView.post of <reservations.views.ReservationCreateView object at 0x0000017845424AA0>>')], 'id': 1616075994688, 'pre_context': ["        # request method isn't on the approved list.
+", '        if request.method.lower() in self.http_method_names:', '            handler = getattr(', '                self, request.method.lower(), self.http_method_not_allowed', '
+)', '        else:', '            handler = self.http_method_not_allowed'], 'context_line': '        return handler(request, *args, **kwargs)', 'post_context': ['', '    def http_method_not_al
+lowed(self, request, *args, **kwargs):', '        logger.warning(', '            "Method Not Allowed (%s): %s",', '            request.method,', '            request.path,'], 'pre_context_line
+no': 136, 'colno': '\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None
+, 'tb': <traceback object at 0x0000017845A2B6C0>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\views\\generic\\edit.py', 'functio
+n': 'post', 'lineno': 182, 'vars': [('self', '<reservations.views.ReservationCreateView object at 0x0000017845424AA0>'), ('request', "<WSGIRequest: POST '/reservations/create/6/'>"), ('args', 
+'()'), ('kwargs', "{'tour_id': 6}"), ('__class__', "<class 'django.views.generic.edit.BaseCreateView'>")], 'id': 1616075994816, 'pre_context': ['', '    def get(self, request, *args, **kwargs)
+:', '        self.object = None', '        return super().get(request, *args, **kwargs)', '', '    def post(self, request, *args, **kwargs):', '        self.object = None'], 'context_line': ' 
+       return super().post(request, *args, **kwargs)', 'post_context': ['', '', 'class CreateView(SingleObjectTemplateResponseMixin, BaseCreateView):', '    """', '    View for creating a new 
+object, with a response rendered by a template.', '    """'], 'pre_context_lineno': 175, 'colno': '\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x0000017845419200>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pych
+armproject1\\royalt\\venv\\Lib\\site-packages\\django\\views\\generic\\edit.py', 'function': 'post', 'lineno': 151, 'vars': [('self', '<reservations.views.ReservationCreateView object at 0x000
+0017845424AA0>'), ('request', "<WSGIRequest: POST '/reservations/create/6/'>"), ('args', '()'), ('kwargs', "{'tour_id': 6}"), ('form', '<ReservationForm bound=True, valid=True, fields=(start_d
+ate;number_of_people;full_name)>')], 'id': 1616069628416, 'pre_context': ['    def post(self, request, *args, **kwargs):', '        """', '        Handle POST requests: instantiate a form inst
+ance with the passed', "        POST variables and then check if it's valid.", '        """', '        form = self.get_form()', '        if form.is_valid():'], 'context_line': '            ret
+urn self.form_valid(form)', 'post_context': ['        else:', '            return self.form_invalid(form)', '', '    # PUT is a valid HTTP verb for creating (with a known URL) or editing an', 
+'    # object, note that browsers only support POST for now.', '    def put(self, *args, **kwargs):'], 'pre_context_lineno': 144, 'colno': '\n                        ^^^^^^^^^^^^^^^^^^^^^', 't
+b_area_colno': '\n           ^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x000001784541AC80>, 'type': 'user', 'filename': 'C:\\Users\\uc
+ha9\\PycharmProjects\\royaltravel\\reservations\\views.py', 'function': 'form_valid', 'lineno': 55, 'vars': [('self', '<reservations.views.ReservationCreateView object at 0x0000017845424AA0>')
+, ('form', '<ReservationForm bound=True, valid=True, fields=(start_date;number_of_people;full_name)>'), ('user', '<SimpleLazyObject: <CustomUser: sopio>>'), ('tour', '<Tour: 10 days tour>'), (
+'start_date', 'datetime.date(2024, 12, 19)'), ('end_date', 'datetime.date(2024, 12, 29)'), ('overlapping_reservations', '<QuerySet [<Reservation: RES000036 - sopio>]>'), ('__class__', "<class 
+'reservations.views.ReservationCreateView'>")], 'id': 1616069635200, 'pre_context': ['        ).exclude(pk=user.pk)', '', '        if overlapping_reservations.exists():', "            form.add
+_error('start_date', 'You already have a reservation for this tour during the selected dates.')", '            return self.form_invalid(form)', "        messages.success(self.request, f'Your C
+onfirmation has been sent to {self.request.user.email}')", ''], 'context_line': '        return super().form_valid(form)', 'post_context': ['', 'class ReservationUpdateView(UpdateView):', '   
+ model = Reservation', "    template_name = 'reservations/reservation_update_form.html'", "    fields = ['start_date', 'number_of_people', 'full_name']", "    success_url = reverse_lazy('reser
+vation-list')"], 'pre_context_lineno': 48, 'colno': '\n                   ^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n           ^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_e
+xplicit': None, 'tb': <traceback object at 0x000001784595D040>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\views\\generic\\edit
+.py', 'function': 'form_valid', 'lineno': 133, 'vars': [('self', '<reservations.views.ReservationCreateView object at 0x0000017845424AA0>'), ('form', '<ReservationForm bound=True, valid=True, 
+fields=(start_date;number_of_people;full_name)>'), ('__class__', "<class 'django.views.generic.edit.ModelFormMixin'>")], 'id': 1616075149376, 'pre_context': ['                    "No URL to re
+direct to.  Either provide a url or define"', '                    " a get_absolute_url method on the Model."', '                )', '        return url', '', '    def form_valid(self, form):'
+, '        """If the form is valid, save the associated model."""'], 'context_line': '        self.object = form.save()', 'post_context': ['        return super().form_valid(form)', '', '', 'c
+lass ProcessFormView(View):', '    """Render a form on GET and processes it on POST."""', ''], 'pre_context_lineno': 126, 'colno': '\n                           ^^^^^^^^^^^', 'tb_area_colno': 
+'\n                  ^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x000001784595FAC0>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproj
+ect1\\royalt\\venv\\Lib\\site-packages\\django\\forms\\models.py', 'function': 'save', 'lineno': 552, 'vars': [('self', '<ReservationForm bound=True, valid=True, fields=(start_date;number_of_p
+eople;full_name)>'), ('commit', 'True')], 'id': 1616075160256, 'pre_context': ['                % (', '                    self.instance._meta.object_name,', '                    "created" if 
+self.instance._state.adding else "changed",', '                )', '            )', '        if commit:', '            # If committing, save the instance and the m2m data immediately.'], 'cont
+ext_line': '            self.instance.save()', 'post_context': ['            self._save_m2m()', '        else:', '            # If not committing, add a method to the form to allow deferred', 
+'            # saving of m2m data.', '            self.save_m2m = self._save_m2m', '        return self.instance'], 'pre_context_lineno': 545, 'colno': '\n                 ^^^^^^^^^^^^^^^^^^^^
+', 'tb_area_colno': '\n    ^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x00000178458C25C0>, 'type': 'user', 'filename': 'C:\\Users\\ucha9
+\\PycharmProjects\\royaltravel\\reservations\\models.py', 'function': 'save', 'lineno': 36, 'vars': [('self', '<Reservation: RES000036 - sopio>'), ('args', '()'), ('kwargs', '{}'), ('__class__
+', "<class 'reservations.models.Reservation'>")], 'id': 1616074515904, 'pre_context': ['    def __str__(self):', "        return f'{self.reservation_reference} - {self.user}'", '', '    def sa
+ve(self, *args, **kwargs):', '        if not self.end_date:', '            self.end_date = self.start_date + timedelta(days=self.tour.duration-1)', '        self.total_price = self.number_of_p
+eople * self.tour.price_per_person'], 'context_line': '        super().save(*args, **kwargs)', 'post_context': ['        # self.send_confirmation_email()', '', '    def clean(self):', '       
+ from django.core.exceptions import ValidationError', '        if self.number_of_people > 6:', "            raise ValidationError('Number of people cannot be more than 6')"], 'pre_context_line
+no': 29, 'colno': '\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback objec
+t at 0x000001784595FD00>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\db\\models\\base.py', 'function': 'save', 'lineno': 822, '
+vars': [('self', '<Reservation: RES000036 - sopio>'), ('force_insert', 'False'), ('force_update', 'False'), ('using', "'default'"), ('update_fields', 'None'), ('deferred_non_generated_fields',
+ 'set()')], 'id': 1616075160832, 'pre_context': ['            for field in self._meta.concrete_fields:', '                if not field.primary_key and not hasattr(field, "through"):', '       
+             field_names.add(field.attname)', '            loaded_fields = field_names.difference(deferred_non_generated_fields)', '            if loaded_fields:', '                update_fiel
+ds = frozenset(loaded_fields)', ''], 'context_line': '        self.save_base(', 'post_context': ['            using=using,', '            force_insert=force_insert,', '            force_update
+=force_update,', '            update_fields=update_fields,', '        )', ''], 'pre_context_lineno': 815, 'colno': '\n             ^', 'tb_area_colno': '\n    ^'}, {'exc_cause': None, 'exc_cau
+se_explicit': None, 'tb': <traceback object at 0x000001784595D180>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\db\\models\\base
+.py', 'function': 'save_base', 'lineno': 924, 'vars': [('self', '<Reservation: RES000036 - sopio>'), ('raw', 'False'), ('force_insert', '()'), ('force_update', 'False'), ('using', "'default'")
+, ('update_fields', 'None'), ('cls', "<class 'reservations.models.Reservation'>"), ('origin', "<class 'reservations.models.Reservation'>"), ('meta', '<Options for Reservation>'), ('context_man
+ager', '<contextlib._GeneratorContextManager object at 0x00000178458DB110>'), ('parent_inserted', 'False'), ('updated', 'False')], 'id': 1616075149696, 'pre_context': ['        # Store the dat
+abase on which the object was saved', '        self._state.db = using', '        # Once saved, this is no longer a to-be-added instance.', '        self._state.adding = False', '', '        # 
+Signal that the save is complete', '        if not meta.auto_created:'], 'context_line': '            post_save.send(', 'post_context': ['                sender=origin,', '                inst
+ance=self,', '                created=(not updated),', '                update_fields=update_fields,', '                raw=raw,', '                using=using,'], 'pre_context_lineno': 917, '
+colno': '\n                 ^', 'tb_area_colno': '\n    ^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x000001784595CF80>, 'type': 'django', 'filename': 'C:\\
+Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\dispatch\\dispatcher.py', 'function': 'send', 'lineno': 189, 'vars': [('self', '<django.db.models.signals.ModelSignal o
+bject at 0x000001784485FE00>'), ('sender', "<class 'reservations.models.Reservation'>"), ('named', "{'created': True,\n 'instance': <Reservation: RES000036 - sopio>,\n 'raw': False,\n 'update_
+fields': None,\n 'using': 'default'}"), ('responses', '[]'), ('sync_receivers', '[<function generate_reference_code at 0x000001784529BC40>]'), ('receiver', '<function generate_reference_code a
+t 0x000001784529BC40>'), ('async_receivers', '[]')], 'id': 1616075149184, 'pre_context': ['            not self.receivers', '            or self.sender_receivers_cache.get(sender) is NO_RECEIV
+ERS', '        ):', '            return []', '        responses = []', '        sync_receivers, async_receivers = self._live_receivers(sender)', '        for receiver in sync_receivers:'], 'co
+ntext_line': '            response = receiver(signal=self, sender=sender, **named)', 'post_context': ['            responses.append((receiver, response))', '        if async_receivers:', '', '
+            async def asend():', '                async_responses = await asyncio.gather(', '                    *('], 'pre_context_lineno': 182, 'colno': '\n                            ^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback o
+bject at 0x000001784595CA80>, 'type': 'user', 'filename': 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\reservations\\signals.py', 'function': 'generate_reference_code', 'lineno': 10, 'vars
+': [('sender', "<class 'reservations.models.Reservation'>"), ('instance', '<Reservation: RES000036 - sopio>'), ('created', 'True'), ('kwargs', "{'raw': False,\n 'signal': <django.db.models.sig
+nals.ModelSignal object at 0x000001784485FE00>,\n 'update_fields': None,\n 'using': 'default'}")], 'id': 1616075147904, 'pre_context': ['from .models import Reservation', '', '@receiver(post_s
+ave, sender=Reservation)', 'def generate_reference_code(sender, instance, created, **kwargs):', '    if created and not instance.reservation_reference:', "        instance.reservation_referenc
+e = f'RES{instance.reservation_number:06d}'", '        instance.save()'], 'context_line': '        instance.send_confirmation_email()', 'post_context': [], 'pre_context_lineno': 3, 'colno': '\
+n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x000
+001784595CB00>, 'type': 'user', 'filename': 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\reservations\\models.py', 'function': 'send_confirmation_email', 'lineno': 56, 'vars': [('self', '<
+Reservation: RES000036 - sopio>'), ('subject', "'Reservation Confirmation'"), ('from_email', "'ucha95@gmail.com'"), ('to_email', "'sopio@sopio.com'"), ('text_content', "('Dear Ucha Khmaladze,\
+\n'\n '\\n'\n 'Thank you for your reservation. Here are the details of your reservation:\\n'\n '\\n'\n 'Reservation Number: RES000036\\n'\n 'Full Name: Ucha Khmaladze\\n'\n 'Tour: 10 days tour
+\\n'\n 'Start Date: Dec. 19, 2024\\n'\n 'End Date: Dec. 28, 2024\\n'\n 'Itinerary: 10 day tour\\n'\n '\\n'\n 'A PDF document with your reservation details is attached to this email.\\n'\n '\\n
+'\n 'Best regards,\\n'\n 'Your Company\\n')"), ('html_content', '(\'<!DOCTYPE html>\\n\'\n \'<html lang="en">\\n\'\n \'<head>\\n\'\n \'    <meta charset="UTF-8">\\n\'\n \'    <title>Reservatio
+n Confirmation</title>\\n\'\n \'</head>\\n\'\n \'<body>\\n\'\n \'    <h1>Reservation Confirmation</h1>\\n\'\n \'    <p>Dear Ucha Khmaladze,</p>\\n\'\n \'    <p>Thank you for your reservation. 
+Here are the details of your \'\n \'reservation:</p>\\n\'\n \'    <ul>\\n\'\n \'        <li>Reservation Number: RES000036</li>\\n\'\n \'        <li>Full Name: Ucha Khmaladze</li>\\n\'\n \'    
+    <li>Tour: 10 days tour</li>\\n\'\n \'        <li>Start Date: Dec. 19, 2024</li>\\n\'\n \'        <li>End Date: Dec. 28, 2024</li>\\n\'\n \'        <li>Itinerary: 10 day tour</li>\\n\'\n \'
+\\n\'\n \'    </ul>\\n\'\n \'    <p>A PDF document with your reservation details is attached to this \'\n \'email.</p>\\n\'\n \'    <p>Best regards,</p>\\n\'\n \'    <p>Royal Travel</p>\\n\'\n
+ \'</body>\\n\'\n \'</html>\\n\')'), ('email', '<django.core.mail.message.EmailMultiAlternatives object at 0x0000017845313AA0>'), ('pdf', '<_io.BytesIO object at 0x00000178458DDF30>')], 'id': 
+1616075148032, 'pre_context': ['        to_email = self.user.email', "        text_content = render_to_string('reservations/reservation_confirmation_email.txt', {'reservation': self})", "     
+   html_content = render_to_string('reservations/reservation_confirmation_email.html', {'reservation': self})", '        email = EmailMultiAlternatives(subject, text_content, from_email, [to_e
+mail])', '        email.attach_alternative(html_content, "text/html")', '        pdf = generate_reservation_pdf(self)', "        email.attach(f'Reservation_{self.reservation_reference}.pdf', p
+df.read(), 'application/pdf')"], 'context_line': '        email.send()', 'post_context': ['', '    def check_and_update_status(self):', "        if self.status == 'active' and self.end_date < 
+date.today().date():", "            self.status = 'completed'", '            self.save()', ''], 'pre_context_lineno': 49, 'colno': '\n            ^^^^^^^^^^^^', 'tb_area_colno': '\n    ^^^^^^^
+^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x000001784595CE00>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\si
+te-packages\\django\\core\\mail\\message.py', 'function': 'send', 'lineno': 301, 'vars': [('self', '<django.core.mail.message.EmailMultiAlternatives object at 0x0000017845313AA0>'), ('fail_sil
+ently', 'False')], 'id': 1616075148800, 'pre_context': ['', '    def send(self, fail_silently=False):', '        """Send the email message."""', '        if not self.recipients():', "
+   # Don't bother creating the network connection if there's nobody to", '            # send to.', '            return 0'], 'context_line': '        return self.get_connection(fail_silently).s
+end_messages([self])', 'post_context': ['', '    def attach(self, filename=None, content=None, mimetype=None):', '        """', '        Attach a file with the given filename and content. The 
+filename can', '        be omitted and the mimetype is guessed, if not provided.', ''], 'pre_context_lineno': 294, 'colno': '\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^', 'tb_area_colno': '\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x0000017845
+95EF00>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\core\\mail\\backends\\smtp.py', 'function': 'send_messages', 'lineno': 128,
+ 'vars': [('self', '<django.core.mail.backends.smtp.EmailBackend object at 0x00000178454244D0>'), ('email_messages', '[<django.core.mail.message.EmailMultiAlternatives object at 0x000001784531
+3AA0>]')], 'id': 1616075157248, 'pre_context': ['        """', '        Send one or more EmailMessage objects and return the number of email', '        messages sent.', '        """', '       
+ if not email_messages:', '            return 0', '        with self._lock:'], 'context_line': '            new_conn_created = self.open()', 'post_context': ['            if not self.connectio
+n or new_conn_created is None:', '                # We failed silently on open().', '                # Trying to send would be pointless.', '                return 0', '            num_sent = 
+0', '            try:'], 'pre_context_lineno': 121, 'colno': '\n                                    ^^^^^^^^^^^', 'tb_area_colno': '\n                       ^^^^^^^^^^^'}, {'exc_cause': None, 
+'exc_cause_explicit': None, 'tb': <traceback object at 0x000001784595C800>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\core\\ma
+il\\backends\\smtp.py', 'function': 'open', 'lineno': 86, 'vars': [('self', '<django.core.mail.backends.smtp.EmailBackend object at 0x00000178454244D0>'), ('connection_params', "{'local_hostna
+me': 'DESKTOP-JBCKEPM'}")], 'id': 1616075147264, 'pre_context': ['        # For performance, we use the cached FQDN for local_hostname.', '        connection_params = {"local_hostname": DNS_NA
+ME.get_fqdn()}', '        if self.timeout is not None:', '            connection_params["timeout"] = self.timeout', '        if self.use_ssl:', '            connection_params["context"] = self
+.ssl_context', '        try:'], 'context_line': '            self.connection = self.connection_class(', 'post_context': ['                self.host, self.port, **connection_params', '
+   )', '', '            # TLS/SSL are mutually exclusive, so only attempt TLS over', '            # non-secure connections.', '            if not self.use_ssl and self.use_tls:'], 'pre_context
+_lineno': 79, 'colno': '\n                                  ', 'tb_area_colno': '\n                      '}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x000001
+78458C0A80>, 'type': 'user', 'filename': 'C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\smtplib.py', 'function': '__init__', 'lineno': 255, 'vars': [('self', '<smtplib.SM
+TP object at 0x00000178453AF980>'), ('host', "'smtp.gmail.com'"), ('port', '25'), ('local_hostname', "'DESKTOP-JBCKEPM'"), ('timeout', '<object object at 0x0000017841098920>'), ('source_addres
+s', 'None')], 'id': 1616074508928, 'pre_context': ['        self.timeout = timeout', '        self.esmtp_features = {}', "        self.command_encoding = 'ascii'", '        self.source_address
+ = source_address', '        self._auth_challenge_count = 0', '', '        if host:'], 'context_line': '            (code, msg) = self.connect(host, port)', 'post_context': ['            if co
+de != 220:', '                self.close()', '                raise SMTPConnectError(code, msg)', '        if local_hostname is not None:', '            self.local_hostname = local_hostname', 
+'        else:'], 'pre_context_lineno': 248, 'colno': '\n                               ^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n                  ^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause
+': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x00000178458C0680>, 'type': 'user', 'filename': 'C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\smtplib.py
+', 'function': 'connect', 'lineno': 341, 'vars': [('self', '<smtplib.SMTP object at 0x00000178453AF980>'), ('host', "'smtp.gmail.com'"), ('port', '25'), ('source_address', 'None')], 'id': 1616
+074507904, 'pre_context': ['                try:', '                    port = int(port)', '                except ValueError:', '                    raise OSError("nonnumeric port")', '      
+  if not port:', '            port = self.default_port', '        sys.audit("smtplib.connect", self, host, port)'], 'context_line': '        self.sock = self._get_socket(host, port, self.timeo
+ut)', 'post_context': ['        self.file = None', '        (code, msg) = self.getreply()', '        if self.debuglevel > 0:', "            self._print_debug('connect:', repr(msg))", '        
+return (code, msg)', ''], 'pre_context_lineno': 334, 'colno': '\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n                ^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x00000178458C3040>, 'type': 'user', 'filename': 'C:\\Users\\ucha9\\AppData\\Local\\Programs
+\\Python\\Python312\\Lib\\smtplib.py', 'function': '_get_socket', 'lineno': 312, 'vars': [('self', '<smtplib.SMTP object at 0x00000178453AF980>'), ('host', "'smtp.gmail.com'"), ('port', '25'),
+ ('timeout', '<object object at 0x0000017841098920>')], 'id': 1616074518592, 'pre_context': ['    def _get_socket(self, host, port, timeout):', '        # This makes it simpler for SMTP_SSL to
+ use the SMTP connect code', '        # and just alter the socket connection bit.', '        if timeout is not None and not timeout:', "            raise ValueError('Non-blocking socket (timeo
+ut=0) is not supported')", '        if self.debuglevel > 0:', "            self._print_debug('connect: to', (host, port), self.source_address)"], 'context_line': '        return socket.create_
+connection((host, port), timeout,', 'post_context': ['                                        self.source_address)', '', "    def connect(self, host='localhost', port=0, source_address=None):"
+, '        """Connect to a host on a given port.', '', "        If the hostname ends with a colon (`:') followed by a number, and"], 'pre_context_lineno': 305, 'colno': '\n
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback
+ object at 0x00000178458C1780>, 'type': 'user', 'filename': 'C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\socket.py', 'function': 'create_connection', 'lineno': 852, 'va
+rs': [('address', "('smtp.gmail.com', 25)"), ('timeout', '<object object at 0x0000017841098920>'), ('source_address', 'None'), ('all_errors', 'False'), ('host', "'smtp.gmail.com'"), ('port', '
+25'), ('exceptions', '[]'), ('res', "(<AddressFamily.AF_INET: 2>,\n <SocketKind.SOCK_STREAM: 1>,\n 0,\n '',\n ('108.177.15.109', 25))"), ('af', '<AddressFamily.AF_INET: 2>'), ('socktype', '<So
+cketKind.SOCK_STREAM: 1>'), ('proto', '0'), ('canonname', "''"), ('sa', "('108.177.15.109', 25)"), ('sock', '<socket.socket [closed] fd=-1, family=2, type=1, proto=0>')], 'id': 1616074512256, 
+'pre_context': ['            exceptions.append(exc)', '            if sock is not None:', '                sock.close()', '', '    if len(exceptions):', '        try:', '            if not all
+_errors:'], 'context_line': '                raise exceptions[0]', 'post_context': ['            raise ExceptionGroup("create_connection failed", exceptions)', '        finally:', '
+ # Break explicitly a reference cycle', '            exceptions.clear()', '    else:', '        raise error("getaddrinfo returns an empty list")'], 'pre_context_lineno': 845, 'colno': '\n     
+                ^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n    ^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x0000017845988880>, 'type': 'us
+er', 'filename': 'C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\socket.py', 'function': 'create_connection', 'lineno': 837, 'vars': [('address', "('smtp.gmail.com', 25)")
+, ('timeout', '<object object at 0x0000017841098920>'), ('source_address', 'None'), ('all_errors', 'False'), ('host', "'smtp.gmail.com'"), ('port', '25'), ('exceptions', '[]'), ('res', "(<Addr
+essFamily.AF_INET: 2>,\n <SocketKind.SOCK_STREAM: 1>,\n 0,\n '',\n ('108.177.15.109', 25))"), ('af', '<AddressFamily.AF_INET: 2>'), ('socktype', '<SocketKind.SOCK_STREAM: 1>'), ('proto', '0'),
+ ('canonname', "''"), ('sa', "('108.177.15.109', 25)"), ('sock', '<socket.socket [closed] fd=-1, family=2, type=1, proto=0>')], 'id': 1616075327616, 'pre_context': ['        sock = None', '   
+     try:', '            sock = socket(af, socktype, proto)', '            if timeout is not _GLOBAL_DEFAULT_TIMEOUT:', '                sock.settimeout(timeout)', '            if source_addre
+ss:', '                sock.bind(source_address)'], 'context_line': '            sock.connect(sa)', 'post_context': ['            # Break explicitly a reference cycle', '            exceptions
+.clear()', '            return sock', '', '        except error as exc:', '            if not all_errors:'], 'pre_context_lineno': 830, 'colno': '\n                 ^^^^^^^^^^^^^^^^', 'tb_area
+_colno': '\n    ^^^^^^^^^^^^^^^^'}], 'request': <WSGIRequest: POST '/reservations/create/6/'>, 'request_meta': {'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL', 'PSEXEC
+UTIONPOLICYPREFERENCE': 'RemoteSigned', 'PSMODULEPATH': 'C:\\Users\\ucha9\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPow
+erShell\\v1.0\\Modules', 'GOOGLE_DEFAULT_CLIENT_SECRET': '********************', 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)', 'TERM_SESSION_ID': '160daeaf-5375-4bae-8feb-50229b62cfd6', 'COM
+MONPROGRAMW6432': 'C:\\Program Files\\Common Files', 'PROGRAMW6432': 'C:\\Program Files', 'USERNAME': 'ucha9', 'ALLUSERSPROFILE': 'C:\\ProgramData', 'USERPROFILE': 'C:\\Users\\ucha9', 'OS': 'W
+indows_NT', 'GOOGLE_DEFAULT_CLIENT_ID': 'no', 'PROCESSOR_ARCHITECTURE': 'AMD64', 'IDEA_INITIAL_DIRECTORY': 'C:\\Program Files\\JetBrains\\PyCharm 2023.3.2\\bin', 'NUMBER_OF_PROCESSORS': '4', '
+COMSPEC': 'C:\\WINDOWS\\system32\\cmd.exe', 'FPS_BROWSER_APP_PROFILE_STRING': 'Internet Explorer', 'PROCESSOR_LEVEL': '6', 'PATH': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Scripts;C:\
+\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program F
+iles\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\1
+70\\Tools\\Binn\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\ucha9\\AppData\\Local\\Programs\\Pyt
+hon\\Python312\\Scripts\\;C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Python312\\;C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Launcher\\;C:\\Users\\ucha9\\AppData\\Local\\Micro
+soft\\WindowsApps;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Users\\ucha9\\.dotnet\\tools;C:\\Program Files\\heroku\\bin;C:\\Users\\ucha
+9\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\DataGrip 2024.1\\bin;', 'DATAGRIP': 'C:\\Program Files\\JetBrains\\DataGrip 2024.1\\bin;', 'USERDOMAIN_ROAMING
+PROFILE': 'DESKTOP-JBCKEPM', 'VIRTUAL_ENV': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv', 'VIRTUAL_ENV_PROMPT': 'venv', 'WINDIR': 'C:\\WINDOWS', 'DRIVERDATA': 'C:\\Windows\\System32\\Driv
+ers\\DriverData', 'HOMEDRIVE': 'C:', 'PROGRAMFILES': 'C:\\Program Files', 'SESSIONNAME': 'Console', 'LOGONSERVER': '\\\\DESKTOP-JBCKEPM', 'TERMINAL_EMULATOR': 'JetBrains-JediTerm', 'PUBLIC': '
+C:\\Users\\Public', 'PROCESSOR_REVISION': '4501', 'TEMP': 'C:\\Users\\ucha9\\AppData\\Local\\Temp', 'HOMEPATH': '\\Users\\ucha9', 'SYSTEMROOT': 'C:\\WINDOWS', 'COMMONPROGRAMFILES(X86)': 'C:\\P
+rogram Files (x86)\\Common Files', 'ONEDRIVE': 'C:\\Users\\ucha9\\OneDrive', 'ONEDRIVECONSUMER': 'C:\\Users\\ucha9\\OneDrive', 'USERDOMAIN': 'DESKTOP-JBCKEPM', 'SYSTEMDRIVE': 'C:', 'TMP': 'C:\
+\Users\\ucha9\\AppData\\Local\\Temp', 'COMPUTERNAME': 'DESKTOP-JBCKEPM', 'PROGRAMDATA': 'C:\\ProgramData', 'LOCALAPPDATA': 'C:\\Users\\ucha9\\AppData\\Local', 'FPS_BROWSER_USER_PROFILE_STRING'
+: 'Default', 'APPDATA': 'C:\\Users\\ucha9\\AppData\\Roaming', 'COMMONPROGRAMFILES': 'C:\\Program Files\\Common Files', 'GOOGLE_API_KEY': '********************', 'PROCESSOR_IDENTIFIER': 'Intel6
+4 Family 6 Model 69 Stepping 1, GenuineIntel', '_OLD_VIRTUAL_PATH': 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\
+\System32\\OpenSSH\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\To
+ols\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\MySQL
+\\MySQL Shell 8.0\\bin\\;C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\;C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Python312\\;C:\\Users\\ucha9\\AppData\\Loc
+al\\Programs\\Python\\Launcher\\;C:\\Users\\ucha9\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Use
+rs\\ucha9\\.dotnet\\tools;C:\\Program Files\\heroku\\bin;C:\\Users\\ucha9\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\DataGrip 2024.1\\bin;', 'DJANGO_SETTIN
+GS_MODULE': 'royaltravel.settings', 'RUN_MAIN': 'true', 'SERVER_NAME': 'ood.opsource.net', 'GATEWAY_INTERFACE': 'CGI/1.1', 'SERVER_PORT': '8000', 'REMOTE_HOST': '', 'CONTENT_LENGTH': '535', 'S
+CRIPT_NAME': '', 'SERVER_PROTOCOL': 'HTTP/1.1', 'SERVER_SOFTWARE': 'WSGIServer/0.2', 'REQUEST_METHOD': 'POST', 'PATH_INFO': '/reservations/create/6/', 'QUERY_STRING': '', 'REMOTE_ADDR': '127.0
+.0.1', 'CONTENT_TYPE': 'multipart/form-data; boundary=----WebKitFormBoundary0bx1bGAdLVl7XXmA', 'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0'
+, 'HTTP_SEC_CH_UA': '"Not/A)Brand";v="8", "Chromium";v="126", "Microsoft Edge";v="126"', 'HTTP_SEC_CH_UA_MOBILE': '?0', 'HTTP_SEC_CH_UA_PLATFORM': '"Windows"', 'HTTP_UPGRADE_INSECURE_REQUESTS'
+: '1', 'HTTP_ORIGIN': 'http://127.0.0.1:8000', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'HTTP_SEC_FETCH_SITE': 'same-origin
+', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_SEC_FETCH_DEST': 'document', 'HTTP_REFERER': 'http://127.0.0.1:8000/reservations/create/6/', 'HTTP_ACCEPT_ENCODING': 'g
+zip, deflate, br, zstd', 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9', 'HTTP_COOKIE': '********************', 'wsgi.input': <django.core.handlers.wsgi.LimitedStream object at 0x0000017845944940>, 
+'wsgi.errors': <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>, 'wsgi.version': (1, 0), 'wsgi.run_once': False, 'wsgi.url_scheme': 'http', 'wsgi.multithread': True, 'wsgi.multipr
+ocess': False, 'wsgi.file_wrapper': <class 'wsgiref.util.FileWrapper'>, 'CSRF_COOKIE': 'qEFc3ANWw3FQstiMlZ8sh7CvHRaSL5QI'}, 'request_COOKIES_items': dict_items([('csrftoken', '****************
+****'), ('sessionid', '********************')]), 'user_str': 'sopio', 'filtered_POST_items': [('csrfmiddlewaretoken', 'uflXkvHRomjTiiwAObjazl98l8sF01inKJQZdVkDKfOzABEcZ0hsGiBtSPsnBWYV'), ('sta
+rt_date', '2024-12-19'), ('number_of_people', '1'), ('full_name', 'Ucha Khmaladze')], 'settings': {'ABSOLUTE_URL_OVERRIDES': {}, 'ADMINS': [], 'ALLOWED_HOSTS': [], 'APPEND_SLASH': True, 'AUTHE
+NTICATION_BACKENDS': ('django.contrib.auth.backends.ModelBackend', 'users.authentication.EmailOrUsernameModelBackend'), 'AUTH_PASSWORD_VALIDATORS': '********************', 'AUTH_USER_MODEL': '
+users.CustomUser', 'BASE_DIR': WindowsPath('C:/Users/ucha9/PycharmProjects/royaltravel'), 'CACHES': {'default': {'BACKEND': 'django.core.cache.backends.locmem.LocMemCache'}}, 'CACHE_MIDDLEWARE
+_ALIAS': 'default', 'CACHE_MIDDLEWARE_KEY_PREFIX': '********************', 'CACHE_MIDDLEWARE_SECONDS': 600, 'CELERY_BEAT_SCHEDULE': {'update_reservation_statuses': {'task': 'royaltravel.tasks.
+update_reservation_statuses', 'schedule': <crontab: 0 0 * * * (m/h/dM/MY/d)>}}, 'CELERY_BROKER_URL': 'redis://localhost:6379/0', 'CELERY_RESULT_BACKEND': 'redis://localhost:6379/0', 'CSRF_COOK
+IE_AGE': 31449600, 'CSRF_COOKIE_DOMAIN': None, 'CSRF_COOKIE_HTTPONLY': False, 'CSRF_COOKIE_NAME': 'csrftoken', 'CSRF_COOKIE_PATH': '/', 'CSRF_COOKIE_SAMESITE': 'Lax', 'CSRF_COOKIE_SECURE': Fal
+se, 'CSRF_FAILURE_VIEW': 'django.views.csrf.csrf_failure', 'CSRF_HEADER_NAME': 'HTTP_X_CSRFTOKEN', 'CSRF_TRUSTED_ORIGINS': [], 'CSRF_USE_SESSIONS': False, 'DATABASES': {'default': {'ENGINE': '
+django.db.backends.postgresql', 'NAME': 'royaltravel', 'USER': 'postgres', 'PASSWORD': '********************', 'HOST': 'localhost', 'PORT': '5432', 'ATOMIC_REQUESTS': False, 'AUTOCOMMIT': True
+, 'CONN_MAX_AGE': 0, 'CONN_HEALTH_CHECKS': False, 'OPTIONS': {}, 'TIME_ZONE': None, 'TEST': {'CHARSET': None, 'COLLATION': None, 'MIGRATE': True, 'MIRROR': None, 'NAME': None}}}, 'DATABASE_ROU
+TERS': [], 'DATA_UPLOAD_MAX_MEMORY_SIZE': 2621440, 'DATA_UPLOAD_MAX_NUMBER_FIELDS': 1000, 'DATA_UPLOAD_MAX_NUMBER_FILES': 100, 'DATETIME_FORMAT': 'N j, Y, P', 'DATETIME_INPUT_FORMATS': ['%Y-%m
+-%d %H:%M:%S', '%Y-%m-%d %H:%M:%S.%f', '%Y-%m-%d %H:%M', '%m/%d/%Y %H:%M:%S', '%m/%d/%Y %H:%M:%S.%f', '%m/%d/%Y %H:%M', '%m/%d/%y %H:%M:%S', '%m/%d/%y %H:%M:%S.%f', '%m/%d/%y %H:%M'], 'DATE_FO
+RMAT': 'N j, Y', 'DATE_INPUT_FORMATS': ['%Y-%m-%d', '%m/%d/%Y', '%m/%d/%y', '%b %d %Y', '%b %d, %Y', '%d %b %Y', '%d %b, %Y', '%B %d %Y', '%B %d, %Y', '%d %B %Y', '%d %B, %Y'], 'DEBUG': True, 
+'DEBUG_PROPAGATE_EXCEPTIONS': False, 'DECIMAL_SEPARATOR': '.', 'DEFAULT_AUTO_FIELD': 'django.db.models.BigAutoField', 'DEFAULT_CHARSET': 'utf-8', 'DEFAULT_EXCEPTION_REPORTER': 'django.views.de
+bug.ExceptionReporter', 'DEFAULT_EXCEPTION_REPORTER_FILTER': 'django.views.debug.SafeExceptionReporterFilter', 'DEFAULT_FILE_STORAGE': 'django.core.files.storage.FileSystemStorage', 'DEFAULT_F
+ROM_EMAIL': 'ucha95@gmail.com', 'DEFAULT_INDEX_TABLESPACE': '', 'DEFAULT_TABLESPACE': '', 'DISALLOWED_USER_AGENTS': [], 'EMAIL_BACKEND': 'django.core.mail.backends.smtp.EmailBackend', 'EMAIL_H
+OST': 'smtp.gmail.com', 'EMAIL_HOST_PASSWORD': '********************', 'EMAIL_HOST_PORT': 587, 'EMAIL_HOST_USER': 'ucha95@gmail.com', 'EMAIL_PORT': 25, 'EMAIL_SSL_CERTFILE': None, 'EMAIL_SSL_K
+EYFILE': '********************', 'EMAIL_SUBJECT_PREFIX': '[Django] ', 'EMAIL_TIMEOUT': None, 'EMAIL_USE_LOCALTIME': False, 'EMAIL_USE_SSL': False, 'EMAIL_USE_TLS': True, 'FILE_UPLOAD_DIRECTORY
+_PERMISSIONS': None, 'FILE_UPLOAD_HANDLERS': ['django.core.files.uploadhandler.MemoryFileUploadHandler', 'django.core.files.uploadhandler.TemporaryFileUploadHandler'], 'FILE_UPLOAD_MAX_MEMORY_
+SIZE': 2621440, 'FILE_UPLOAD_PERMISSIONS': 420, 'FILE_UPLOAD_TEMP_DIR': None, 'FIRST_DAY_OF_WEEK': 0, 'FIXTURE_DIRS': [], 'FORCE_SCRIPT_NAME': None, 'FORMAT_MODULE_PATH': None, 'FORMS_URLFIELD
+_ASSUME_HTTPS': False, 'FORM_RENDERER': 'django.forms.renderers.DjangoTemplates', 'IGNORABLE_404_URLS': [], 'INSTALLED_APPS': ['django.contrib.admin', 'django.contrib.auth', 'django.contrib.co
+ntenttypes', 'django.contrib.sessions', 'django.contrib.messages', 'django.contrib.staticfiles', 'users', 'tours', 'reservations', 'django_filters'], 'INTERNAL_IPS': [], 'LANGUAGES': [('af', '
+Afrikaans'), ('ar', 'Arabic'), ('ar-dz', 'Algerian Arabic'), ('ast', 'Asturian'), ('az', 'Azerbaijani'), ('bg', 'Bulgarian'), ('be', 'Belarusian'), ('bn', 'Bengali'), ('br', 'Breton'), ('bs', 
+'Bosnian'), ('ca', 'Catalan'), ('ckb', 'Central Kurdish (Sorani)'), ('cs', 'Czech'), ('cy', 'Welsh'), ('da', 'Danish'), ('de', 'German'), ('dsb', 'Lower Sorbian'), ('el', 'Greek'), ('en', 'Eng
+lish'), ('en-au', 'Australian English'), ('en-gb', 'British English'), ('eo', 'Esperanto'), ('es', 'Spanish'), ('es-ar', 'Argentinian Spanish'), ('es-co', 'Colombian Spanish'), ('es-mx', 'Mexi
+can Spanish'), ('es-ni', 'Nicaraguan Spanish'), ('es-ve', 'Venezuelan Spanish'), ('et', 'Estonian'), ('eu', 'Basque'), ('fa', 'Persian'), ('fi', 'Finnish'), ('fr', 'French'), ('fy', 'Frisian')
+, ('ga', 'Irish'), ('gd', 'Scottish Gaelic'), ('gl', 'Galician'), ('he', 'Hebrew'), ('hi', 'Hindi'), ('hr', 'Croatian'), ('hsb', 'Upper Sorbian'), ('hu', 'Hungarian'), ('hy', 'Armenian'), ('ia
+', 'Interlingua'), ('id', 'Indonesian'), ('ig', 'Igbo'), ('io', 'Ido'), ('is', 'Icelandic'), ('it', 'Italian'), ('ja', 'Japanese'), ('ka', 'Georgian'), ('kab', 'Kabyle'), ('kk', 'Kazakh'), ('k
+m', 'Khmer'), ('kn', 'Kannada'), ('ko', 'Korean'), ('ky', 'Kyrgyz'), ('lb', 'Luxembourgish'), ('lt', 'Lithuanian'), ('lv', 'Latvian'), ('mk', 'Macedonian'), ('ml', 'Malayalam'), ('mn', 'Mongol
+ian'), ('mr', 'Marathi'), ('ms', 'Malay'), ('my', 'Burmese'), ('nb', 'Norwegian Bokmål'), ('ne', 'Nepali'), ('nl', 'Dutch'), ('nn', 'Norwegian Nynorsk'), ('os', 'Ossetic'), ('pa', 'Punjabi'), 
+('pl', 'Polish'), ('pt', 'Portuguese'), ('pt-br', 'Brazilian Portuguese'), ('ro', 'Romanian'), ('ru', 'Russian'), ('sk', 'Slovak'), ('sl', 'Slovenian'), ('sq', 'Albanian'), ('sr', 'Serbian'), 
+('sr-latn', 'Serbian Latin'), ('sv', 'Swedish'), ('sw', 'Swahili'), ('ta', 'Tamil'), ('te', 'Telugu'), ('tg', 'Tajik'), ('th', 'Thai'), ('tk', 'Turkmen'), ('tr', 'Turkish'), ('tt', 'Tatar'), (
+'udm', 'Udmurt'), ('ug', 'Uyghur'), ('uk', 'Ukrainian'), ('ur', 'Urdu'), ('uz', 'Uzbek'), ('vi', 'Vietnamese'), ('zh-hans', 'Simplified Chinese'), ('zh-hant', 'Traditional Chinese')], 'LANGUAG
+ES_BIDI': ['he', 'ar', 'ar-dz', 'ckb', 'fa', 'ug', 'ur'], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_COOKIE_AGE': None, 'LANGUAGE_COOKIE_DOMAIN': None, 'LANGUAGE_COOKIE_HTTPONLY': False, 'LANGUAGE_CO
+OKIE_NAME': 'django_language', 'LANGUAGE_COOKIE_PATH': '/', 'LANGUAGE_COOKIE_SAMESITE': None, 'LANGUAGE_COOKIE_SECURE': False, 'LOCALE_PATHS': [], 'LOGGING': {'version': 1, 'disable_existing_l
+oggers': False, 'handlers': {'console': {'class': 'logging.StreamHandler'}, 'file': {'class': 'logging.FileHandler', 'filename': 'django_email.log'}}, 'loggers': {'django': {'handlers': ['cons
+ole', 'file'], 'level': 'DEBUG'}, 'django.request': {'handlers': ['console', 'file'], 'level': 'DEBUG', 'propagate': False}, 'django.security.SuspiciousOperation': {'handlers': ['console', 'fi
+le'], 'level': 'DEBUG', 'propagate': False}}}, 'LOGGING_CONFIG': 'logging.config.dictConfig', 'LOGIN_REDIRECT_URL': '/accounts/profile/', 'LOGIN_URL': 'login', 'LOGOUT_REDIRECT_URL': None, 'MA
+NAGERS': [], 'MEDIA_ROOT': 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\media', 'MEDIA_URL': '/media/', 'MESSAGE_STORAGE': 'django.contrib.messages.storage.fallback.FallbackStorage', 'MIDD
+LEWARE': ['django.middleware.security.SecurityMiddleware', 'django.contrib.sessions.middleware.SessionMiddleware', 'django.middleware.common.CommonMiddleware', 'django.middleware.csrf.CsrfView
+Middleware', 'django.contrib.auth.middleware.AuthenticationMiddleware', 'django.contrib.messages.middleware.MessageMiddleware', 'django.middleware.clickjacking.XFrameOptionsMiddleware', 'royal
+travel.middleware.Redirect404Middleware', 'royaltravel.middleware.RedirectNotPermittedMiddleware'], 'MIGRATION_MODULES': {}, 'MONTH_DAY_FORMAT': 'F j', 'NUMBER_GROUPING': 0, 'PASSWORD_HASHERS'
+: '********************', 'PASSWORD_RESET_TIMEOUT': '********************', 'PREPEND_WWW': False, 'ROOT_URLCONF': 'royaltravel.urls', 'SECRET_KEY': '********************', 'SECRET_KEY_FALLBACK
+S': '********************', 'SECURE_CONTENT_TYPE_NOSNIFF': True, 'SECURE_CROSS_ORIGIN_OPENER_POLICY': 'same-origin', 'SECURE_HSTS_INCLUDE_SUBDOMAINS': False, 'SECURE_HSTS_PRELOAD': False, 'SEC
+URE_HSTS_SECONDS': 0, 'SECURE_PROXY_SSL_HEADER': None, 'SECURE_REDIRECT_EXEMPT': [], 'SECURE_REFERRER_POLICY': 'same-origin', 'SECURE_SSL_HOST': None, 'SECURE_SSL_REDIRECT': False, 'SERVER_EMA
+IL': 'root@localhost', 'SESSION_CACHE_ALIAS': 'default', 'SESSION_COOKIE_AGE': 1209600, 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_NAME': 'sessionid', 'SES
+SION_COOKIE_PATH': '/', 'SESSION_COOKIE_SAMESITE': 'Lax', 'SESSION_COOKIE_SECURE': False, 'SESSION_ENGINE': 'django.contrib.sessions.backends.db', 'SESSION_EXPIRE_AT_BROWSER_CLOSE': False, 'SE
+SSION_FILE_PATH': None, 'SESSION_SAVE_EVERY_REQUEST': False, 'SESSION_SERIALIZER': 'django.contrib.sessions.serializers.JSONSerializer', 'SETTINGS_MODULE': 'royaltravel.settings', 'SHORT_DATET
+IME_FORMAT': 'm/d/Y P', 'SHORT_DATE_FORMAT': 'm/d/Y', 'SIGNING_BACKEND': 'django.core.signing.TimestampSigner', 'SILENCED_SYSTEM_CHECKS': [], 'SITE_URL': 'http://localhost:8000', 'STATICFILES_
+DIRS': [WindowsPath('C:/Users/ucha9/PycharmProjects/royaltravel/static')], 'STATICFILES_FINDERS': ['django.contrib.staticfiles.finders.FileSystemFinder', 'django.contrib.staticfiles.finders.Ap
+pDirectoriesFinder'], 'STATICFILES_STORAGE': 'django.contrib.staticfiles.storage.StaticFilesStorage', 'STATIC_ROOT': None, 'STATIC_URL': '/static/', 'STORAGES': {'default': {'BACKEND': 'django
+.core.files.storage.FileSystemStorage'}, 'staticfiles': {'BACKEND': 'django.contrib.staticfiles.storage.StaticFilesStorage'}}, 'TEMPLATES': [{'BACKEND': 'django.template.backends.django.Django
+Templates', 'DIRS': [WindowsPath('C:/Users/ucha9/PycharmProjects/royaltravel/templates')], 'APP_DIRS': True, 'OPTIONS': {'context_processors': ['django.template.context_processors.debug', 'dja
+ngo.template.context_processors.request', 'django.contrib.auth.context_processors.auth', 'django.contrib.messages.context_processors.messages']}}], 'TEST_NON_SERIALIZED_APPS': [], 'TEST_RUNNER
+': 'django.test.runner.DiscoverRunner', 'THOUSAND_SEPARATOR': ',', 'TIME_FORMAT': 'P', 'TIME_INPUT_FORMATS': ['%H:%M:%S', '%H:%M:%S.%f', '%H:%M'], 'TIME_ZONE': 'UTC', 'USE_I18N': True, 'USE_TH
+OUSAND_SEPARATOR': False, 'USE_TZ': True, 'USE_X_FORWARDED_HOST': False, 'USE_X_FORWARDED_PORT': False, 'WSGI_APPLICATION': 'royaltravel.wsgi.application', 'X_FRAME_OPTIONS': 'DENY', 'YEAR_MON
+TH_FORMAT': 'F Y'}, 'sys_executable': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Scripts\\python.exe', 'sys_version_info': '3.12.1', 'server_time': datetime.datetime(2024, 6, 18, 22, 58
+, 32, 58909, tzinfo=datetime.timezone.utc), 'django_version_info': '5.0.6', 'sys_path': ['C:\\Users\\ucha9\\PycharmProjects\\royaltravel', 'C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\
+Python312\\python312.zip', 'C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Python312\\DLLs', 'C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Python312\\Lib', 'C:\\Users\\ucha9\\AppDa
+ta\\Local\\Programs\\Python\\Python312', 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv', 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages'], 'template_info': None, 'temp
+late_does_not_exist': False, 'postmortem': None, 'request_GET_items': <generator object MultiValueDict.items at 0x00000178458E25A0>, 'request_FILES_items': <generator object MultiValueDict.ite
+ms at 0x00000178458E2400>, 'request_insecure_uri': 'http://127.0.0.1:8000/reservations/create/6/', 'raising_view_name': 'reservations.views.ReservationCreateView', 'exception_type': 'TimeoutEr
+ror', 'exception_value': '[WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because con
+nected host has failed to respond', 'lastframe': {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x0000017845988880>, 'type': 'user', 'filename': 'C:\\Users\\ucha9\\
+AppData\\Local\\Programs\\Python\\Python312\\Lib\\socket.py', 'function': 'create_connection', 'lineno': 837, 'vars': [('address', "('smtp.gmail.com', 25)"), ('timeout', '<object object at 0x0
+000017841098920>'), ('source_address', 'None'), ('all_errors', 'False'), ('host', "'smtp.gmail.com'"), ('port', '25'), ('exceptions', '[]'), ('res', "(<AddressFamily.AF_INET: 2>,\n <SocketKind
+.SOCK_STREAM: 1>,\n 0,\n '',\n ('108.177.15.109', 25))"), ('af', '<AddressFamily.AF_INET: 2>'), ('socktype', '<SocketKind.SOCK_STREAM: 1>'), ('proto', '0'), ('canonname', "''"), ('sa', "('108.
+177.15.109', 25)"), ('sock', '<socket.socket [closed] fd=-1, family=2, type=1, proto=0>')], 'id': 1616075327616, 'pre_context': ['        sock = None', '        try:', '            sock = sock
+et(af, socktype, proto)', '            if timeout is not _GLOBAL_DEFAULT_TIMEOUT:', '                sock.settimeout(timeout)', '            if source_address:', '                sock.bind(sou
+rce_address)'], 'context_line': '            sock.connect(sa)', 'post_context': ['            # Break explicitly a reference cycle', '            exceptions.clear()', '            return sock'
+, '', '        except error as exc:', '            if not all_errors:'], 'pre_context_lineno': 830, 'colno': '\n                 ^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n    ^^^^^^^^^^^^^^^^'}}]
+Exception while resolving variable 'exception_notes' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\PycharmProjects\royaltravel\reservations\views.py", line 55, in form_valid
+    return super().form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\views\generic\edit.py", line 133, in form_valid
+    self.object = form.save()
+                  ^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\forms\models.py", line 552, in save
+    self.instance.save()
+  File "C:\Users\ucha9\PycharmProjects\royaltravel\reservations\models.py", line 36, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\db\models\base.py", line 924, in save_base
+    post_save.send(
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\dispatch\dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\PycharmProjects\royaltravel\reservations\signals.py", line 10, in generate_reference_code
+    instance.send_confirmation_email()
+  File "C:\Users\ucha9\PycharmProjects\royaltravel\reservations\models.py", line 56, in send_confirmation_email
+    email.send()
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 852, in create_connection
+    raise exceptions[0]
+  File "C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 837, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host 
+has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'exception_notes'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 881, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'Context' has no attribute 'exception_notes'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'exception_notes'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [exception_notes] in [{'True': True, 'False': False, 'None': None}, {'is_email': False, 'unicode_hint': '', 'frames': [{'exc_ca
+use': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x0000017845A2B3C0>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\djan
+go\\core\\handlers\\exception.py', 'function': 'inner', 'lineno': 55, 'vars': [('request', "<WSGIRequest: POST '/reservations/create/6/'>"), ('exc', "TimeoutError(10060, 'A connection attempt 
+failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond', None, 10060, None)"), ('get_
+response', '<bound method BaseHandler._get_response of <django.core.handlers.wsgi.WSGIHandler object at 0x0000017843BB7FE0>>')], 'id': 1616075994048, 'pre_context': ['', '        return inner'
+, '    else:', '', '        @wraps(get_response)', '        def inner(request):', '            try:'], 'context_line': '                response = get_response(request)', 'post_context': ['   
+         except Exception as exc:', '                response = response_for_exception(request, exc)', '            return response', '', '        return inner', ''], 'pre_context_lineno': 48,
+ 'colno': '\n                               ^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n               ^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback
+ object at 0x0000017845A2BF80>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\core\\handlers\\base.py', 'function': '_get_response
+', 'lineno': 197, 'vars': [('self', '<django.core.handlers.wsgi.WSGIHandler object at 0x0000017843BB7FE0>'), ('request', "<WSGIRequest: POST '/reservations/create/6/'>"), ('response', 'None'),
+ ('callback', '<function View.as_view.<locals>.view at 0x0000017845374720>'), ('callback_args', '()'), ('callback_kwargs', "{'tour_id': 6}"), ('middleware_method', '<bound method CsrfViewMiddl
+eware.process_view of <CsrfViewMiddleware get_response=convert_exception_to_response.<locals>.inner>>'), ('wrapped_callback', '<function View.as_view.<locals>.view at 0x0000017845374720>')], '
+id': 1616075997056, 'pre_context': ['', '        if response is None:', '            wrapped_callback = self.make_view_atomic(callback)', '            # If it is an asynchronous view, run it i
+n a subthread.', '            if iscoroutinefunction(wrapped_callback):', '                wrapped_callback = async_to_sync(wrapped_callback)', '            try:'], 'context_line': '
+      response = wrapped_callback(request, *callback_args, **callback_kwargs)', 'post_context': ['            except Exception as e:', '                response = self.process_exception_by_mid
+dleware(e, request)', '                if response is None:', '                    raise', '', '        # Complain if the view returned None (a common error).'], 'pre_context_lineno': 190, 'co
+lno': '\n                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x0000017845A2BA40>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\
+site-packages\\django\\views\\generic\\base.py', 'function': 'view', 'lineno': 104, 'vars': [('request', "<WSGIRequest: POST '/reservations/create/6/'>"), ('args', '()'), ('kwargs', "{'tour_id
+': 6}"), ('self', '<reservations.views.ReservationCreateView object at 0x0000017845424AA0>'), ('cls', "<class 'reservations.views.ReservationCreateView'>"), ('initkwargs', '{}')], 'id': 161607
+5995712, 'pre_context': ['            self = cls(**initkwargs)', '            self.setup(request, *args, **kwargs)', '            if not hasattr(self, "request"):', '                raise Attr
+ibuteError(', '                    "%s instance has no \'request\' attribute. Did you override "', '                    "setup() and forget to call super()?" % cls.__name__', '
+)'], 'context_line': '            return self.dispatch(request, *args, **kwargs)', 'post_context': ['', '        view.view_class = cls', '        view.view_initkwargs = initkwargs', '', '     
+   # __name__ and __qualname__ are intentionally left unchanged as', '        # view_class should be used to robustly determine the name of the view'], 'pre_context_lineno': 97, 'colno': '\n  
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': 
+<traceback object at 0x0000017845883600>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\contrib\\auth\\mixins.py', 'function': 'di
+spatch', 'lineno': 73, 'vars': [('self', '<reservations.views.ReservationCreateView object at 0x0000017845424AA0>'), ('request', "<WSGIRequest: POST '/reservations/create/6/'>"), ('args', '()'
+), ('kwargs', "{'tour_id': 6}"), ('__class__', "<class 'django.contrib.auth.mixins.LoginRequiredMixin'>")], 'id': 1616074257920, 'pre_context': ['', 'class LoginRequiredMixin(AccessMixin):', '
+    """Verify that the current user is authenticated."""', '', '    def dispatch(self, request, *args, **kwargs):', '        if not request.user.is_authenticated:', '            return self.ha
+ndle_no_permission()'], 'context_line': '        return super().dispatch(request, *args, **kwargs)', 'post_context': ['', '', 'class PermissionRequiredMixin(AccessMixin):', '    """Verify that
+ the current user has all specified permissions."""', '', '    permission_required = None'], 'pre_context_lineno': 66, 'colno': '\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+', 'tb_area_colno': '\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x0000017845A2B640>, 'type': 'django'
+, 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\views\\generic\\base.py', 'function': 'dispatch', 'lineno': 143, 'vars': [('self', '<reservations.vi
+ews.ReservationCreateView object at 0x0000017845424AA0>'), ('request', "<WSGIRequest: POST '/reservations/create/6/'>"), ('args', '()'), ('kwargs', "{'tour_id': 6}"), ('handler', '<bound metho
+d BaseCreateView.post of <reservations.views.ReservationCreateView object at 0x0000017845424AA0>>')], 'id': 1616075994688, 'pre_context': ["        # request method isn't on the approved list.
+", '        if request.method.lower() in self.http_method_names:', '            handler = getattr(', '                self, request.method.lower(), self.http_method_not_allowed', '
+)', '        else:', '            handler = self.http_method_not_allowed'], 'context_line': '        return handler(request, *args, **kwargs)', 'post_context': ['', '    def http_method_not_al
+lowed(self, request, *args, **kwargs):', '        logger.warning(', '            "Method Not Allowed (%s): %s",', '            request.method,', '            request.path,'], 'pre_context_line
+no': 136, 'colno': '\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None
+, 'tb': <traceback object at 0x0000017845A2B6C0>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\views\\generic\\edit.py', 'functio
+n': 'post', 'lineno': 182, 'vars': [('self', '<reservations.views.ReservationCreateView object at 0x0000017845424AA0>'), ('request', "<WSGIRequest: POST '/reservations/create/6/'>"), ('args', 
+'()'), ('kwargs', "{'tour_id': 6}"), ('__class__', "<class 'django.views.generic.edit.BaseCreateView'>")], 'id': 1616075994816, 'pre_context': ['', '    def get(self, request, *args, **kwargs)
+:', '        self.object = None', '        return super().get(request, *args, **kwargs)', '', '    def post(self, request, *args, **kwargs):', '        self.object = None'], 'context_line': ' 
+       return super().post(request, *args, **kwargs)', 'post_context': ['', '', 'class CreateView(SingleObjectTemplateResponseMixin, BaseCreateView):', '    """', '    View for creating a new 
+object, with a response rendered by a template.', '    """'], 'pre_context_lineno': 175, 'colno': '\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x0000017845419200>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pych
+armproject1\\royalt\\venv\\Lib\\site-packages\\django\\views\\generic\\edit.py', 'function': 'post', 'lineno': 151, 'vars': [('self', '<reservations.views.ReservationCreateView object at 0x000
+0017845424AA0>'), ('request', "<WSGIRequest: POST '/reservations/create/6/'>"), ('args', '()'), ('kwargs', "{'tour_id': 6}"), ('form', '<ReservationForm bound=True, valid=True, fields=(start_d
+ate;number_of_people;full_name)>')], 'id': 1616069628416, 'pre_context': ['    def post(self, request, *args, **kwargs):', '        """', '        Handle POST requests: instantiate a form inst
+ance with the passed', "        POST variables and then check if it's valid.", '        """', '        form = self.get_form()', '        if form.is_valid():'], 'context_line': '            ret
+urn self.form_valid(form)', 'post_context': ['        else:', '            return self.form_invalid(form)', '', '    # PUT is a valid HTTP verb for creating (with a known URL) or editing an', 
+'    # object, note that browsers only support POST for now.', '    def put(self, *args, **kwargs):'], 'pre_context_lineno': 144, 'colno': '\n                        ^^^^^^^^^^^^^^^^^^^^^', 't
+b_area_colno': '\n           ^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x000001784541AC80>, 'type': 'user', 'filename': 'C:\\Users\\uc
+ha9\\PycharmProjects\\royaltravel\\reservations\\views.py', 'function': 'form_valid', 'lineno': 55, 'vars': [('self', '<reservations.views.ReservationCreateView object at 0x0000017845424AA0>')
+, ('form', '<ReservationForm bound=True, valid=True, fields=(start_date;number_of_people;full_name)>'), ('user', '<SimpleLazyObject: <CustomUser: sopio>>'), ('tour', '<Tour: 10 days tour>'), (
+'start_date', 'datetime.date(2024, 12, 19)'), ('end_date', 'datetime.date(2024, 12, 29)'), ('overlapping_reservations', '<QuerySet [<Reservation: RES000036 - sopio>]>'), ('__class__', "<class 
+'reservations.views.ReservationCreateView'>")], 'id': 1616069635200, 'pre_context': ['        ).exclude(pk=user.pk)', '', '        if overlapping_reservations.exists():', "            form.add
+_error('start_date', 'You already have a reservation for this tour during the selected dates.')", '            return self.form_invalid(form)', "        messages.success(self.request, f'Your C
+onfirmation has been sent to {self.request.user.email}')", ''], 'context_line': '        return super().form_valid(form)', 'post_context': ['', 'class ReservationUpdateView(UpdateView):', '   
+ model = Reservation', "    template_name = 'reservations/reservation_update_form.html'", "    fields = ['start_date', 'number_of_people', 'full_name']", "    success_url = reverse_lazy('reser
+vation-list')"], 'pre_context_lineno': 48, 'colno': '\n                   ^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n           ^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_e
+xplicit': None, 'tb': <traceback object at 0x000001784595D040>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\views\\generic\\edit
+.py', 'function': 'form_valid', 'lineno': 133, 'vars': [('self', '<reservations.views.ReservationCreateView object at 0x0000017845424AA0>'), ('form', '<ReservationForm bound=True, valid=True, 
+fields=(start_date;number_of_people;full_name)>'), ('__class__', "<class 'django.views.generic.edit.ModelFormMixin'>")], 'id': 1616075149376, 'pre_context': ['                    "No URL to re
+direct to.  Either provide a url or define"', '                    " a get_absolute_url method on the Model."', '                )', '        return url', '', '    def form_valid(self, form):'
+, '        """If the form is valid, save the associated model."""'], 'context_line': '        self.object = form.save()', 'post_context': ['        return super().form_valid(form)', '', '', 'c
+lass ProcessFormView(View):', '    """Render a form on GET and processes it on POST."""', ''], 'pre_context_lineno': 126, 'colno': '\n                           ^^^^^^^^^^^', 'tb_area_colno': 
+'\n                  ^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x000001784595FAC0>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproj
+ect1\\royalt\\venv\\Lib\\site-packages\\django\\forms\\models.py', 'function': 'save', 'lineno': 552, 'vars': [('self', '<ReservationForm bound=True, valid=True, fields=(start_date;number_of_p
+eople;full_name)>'), ('commit', 'True')], 'id': 1616075160256, 'pre_context': ['                % (', '                    self.instance._meta.object_name,', '                    "created" if 
+self.instance._state.adding else "changed",', '                )', '            )', '        if commit:', '            # If committing, save the instance and the m2m data immediately.'], 'cont
+ext_line': '            self.instance.save()', 'post_context': ['            self._save_m2m()', '        else:', '            # If not committing, add a method to the form to allow deferred', 
+'            # saving of m2m data.', '            self.save_m2m = self._save_m2m', '        return self.instance'], 'pre_context_lineno': 545, 'colno': '\n                 ^^^^^^^^^^^^^^^^^^^^
+', 'tb_area_colno': '\n    ^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x00000178458C25C0>, 'type': 'user', 'filename': 'C:\\Users\\ucha9
+\\PycharmProjects\\royaltravel\\reservations\\models.py', 'function': 'save', 'lineno': 36, 'vars': [('self', '<Reservation: RES000036 - sopio>'), ('args', '()'), ('kwargs', '{}'), ('__class__
+', "<class 'reservations.models.Reservation'>")], 'id': 1616074515904, 'pre_context': ['    def __str__(self):', "        return f'{self.reservation_reference} - {self.user}'", '', '    def sa
+ve(self, *args, **kwargs):', '        if not self.end_date:', '            self.end_date = self.start_date + timedelta(days=self.tour.duration-1)', '        self.total_price = self.number_of_p
+eople * self.tour.price_per_person'], 'context_line': '        super().save(*args, **kwargs)', 'post_context': ['        # self.send_confirmation_email()', '', '    def clean(self):', '       
+ from django.core.exceptions import ValidationError', '        if self.number_of_people > 6:', "            raise ValidationError('Number of people cannot be more than 6')"], 'pre_context_line
+no': 29, 'colno': '\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback objec
+t at 0x000001784595FD00>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\db\\models\\base.py', 'function': 'save', 'lineno': 822, '
+vars': [('self', '<Reservation: RES000036 - sopio>'), ('force_insert', 'False'), ('force_update', 'False'), ('using', "'default'"), ('update_fields', 'None'), ('deferred_non_generated_fields',
+ 'set()')], 'id': 1616075160832, 'pre_context': ['            for field in self._meta.concrete_fields:', '                if not field.primary_key and not hasattr(field, "through"):', '       
+             field_names.add(field.attname)', '            loaded_fields = field_names.difference(deferred_non_generated_fields)', '            if loaded_fields:', '                update_fiel
+ds = frozenset(loaded_fields)', ''], 'context_line': '        self.save_base(', 'post_context': ['            using=using,', '            force_insert=force_insert,', '            force_update
+=force_update,', '            update_fields=update_fields,', '        )', ''], 'pre_context_lineno': 815, 'colno': '\n             ^', 'tb_area_colno': '\n    ^'}, {'exc_cause': None, 'exc_cau
+se_explicit': None, 'tb': <traceback object at 0x000001784595D180>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\db\\models\\base
+.py', 'function': 'save_base', 'lineno': 924, 'vars': [('self', '<Reservation: RES000036 - sopio>'), ('raw', 'False'), ('force_insert', '()'), ('force_update', 'False'), ('using', "'default'")
+, ('update_fields', 'None'), ('cls', "<class 'reservations.models.Reservation'>"), ('origin', "<class 'reservations.models.Reservation'>"), ('meta', '<Options for Reservation>'), ('context_man
+ager', '<contextlib._GeneratorContextManager object at 0x00000178458DB110>'), ('parent_inserted', 'False'), ('updated', 'False')], 'id': 1616075149696, 'pre_context': ['        # Store the dat
+abase on which the object was saved', '        self._state.db = using', '        # Once saved, this is no longer a to-be-added instance.', '        self._state.adding = False', '', '        # 
+Signal that the save is complete', '        if not meta.auto_created:'], 'context_line': '            post_save.send(', 'post_context': ['                sender=origin,', '                inst
+ance=self,', '                created=(not updated),', '                update_fields=update_fields,', '                raw=raw,', '                using=using,'], 'pre_context_lineno': 917, '
+colno': '\n                 ^', 'tb_area_colno': '\n    ^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x000001784595CF80>, 'type': 'django', 'filename': 'C:\\
+Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\dispatch\\dispatcher.py', 'function': 'send', 'lineno': 189, 'vars': [('self', '<django.db.models.signals.ModelSignal o
+bject at 0x000001784485FE00>'), ('sender', "<class 'reservations.models.Reservation'>"), ('named', "{'created': True,\n 'instance': <Reservation: RES000036 - sopio>,\n 'raw': False,\n 'update_
+fields': None,\n 'using': 'default'}"), ('responses', '[]'), ('sync_receivers', '[<function generate_reference_code at 0x000001784529BC40>]'), ('receiver', '<function generate_reference_code a
+t 0x000001784529BC40>'), ('async_receivers', '[]')], 'id': 1616075149184, 'pre_context': ['            not self.receivers', '            or self.sender_receivers_cache.get(sender) is NO_RECEIV
+ERS', '        ):', '            return []', '        responses = []', '        sync_receivers, async_receivers = self._live_receivers(sender)', '        for receiver in sync_receivers:'], 'co
+ntext_line': '            response = receiver(signal=self, sender=sender, **named)', 'post_context': ['            responses.append((receiver, response))', '        if async_receivers:', '', '
+            async def asend():', '                async_responses = await asyncio.gather(', '                    *('], 'pre_context_lineno': 182, 'colno': '\n                            ^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback o
+bject at 0x000001784595CA80>, 'type': 'user', 'filename': 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\reservations\\signals.py', 'function': 'generate_reference_code', 'lineno': 10, 'vars
+': [('sender', "<class 'reservations.models.Reservation'>"), ('instance', '<Reservation: RES000036 - sopio>'), ('created', 'True'), ('kwargs', "{'raw': False,\n 'signal': <django.db.models.sig
+nals.ModelSignal object at 0x000001784485FE00>,\n 'update_fields': None,\n 'using': 'default'}")], 'id': 1616075147904, 'pre_context': ['from .models import Reservation', '', '@receiver(post_s
+ave, sender=Reservation)', 'def generate_reference_code(sender, instance, created, **kwargs):', '    if created and not instance.reservation_reference:', "        instance.reservation_referenc
+e = f'RES{instance.reservation_number:06d}'", '        instance.save()'], 'context_line': '        instance.send_confirmation_email()', 'post_context': [], 'pre_context_lineno': 3, 'colno': '\
+n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x000
+001784595CB00>, 'type': 'user', 'filename': 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\reservations\\models.py', 'function': 'send_confirmation_email', 'lineno': 56, 'vars': [('self', '<
+Reservation: RES000036 - sopio>'), ('subject', "'Reservation Confirmation'"), ('from_email', "'ucha95@gmail.com'"), ('to_email', "'sopio@sopio.com'"), ('text_content', "('Dear Ucha Khmaladze,\
+\n'\n '\\n'\n 'Thank you for your reservation. Here are the details of your reservation:\\n'\n '\\n'\n 'Reservation Number: RES000036\\n'\n 'Full Name: Ucha Khmaladze\\n'\n 'Tour: 10 days tour
+\\n'\n 'Start Date: Dec. 19, 2024\\n'\n 'End Date: Dec. 28, 2024\\n'\n 'Itinerary: 10 day tour\\n'\n '\\n'\n 'A PDF document with your reservation details is attached to this email.\\n'\n '\\n
+'\n 'Best regards,\\n'\n 'Your Company\\n')"), ('html_content', '(\'<!DOCTYPE html>\\n\'\n \'<html lang="en">\\n\'\n \'<head>\\n\'\n \'    <meta charset="UTF-8">\\n\'\n \'    <title>Reservatio
+n Confirmation</title>\\n\'\n \'</head>\\n\'\n \'<body>\\n\'\n \'    <h1>Reservation Confirmation</h1>\\n\'\n \'    <p>Dear Ucha Khmaladze,</p>\\n\'\n \'    <p>Thank you for your reservation. 
+Here are the details of your \'\n \'reservation:</p>\\n\'\n \'    <ul>\\n\'\n \'        <li>Reservation Number: RES000036</li>\\n\'\n \'        <li>Full Name: Ucha Khmaladze</li>\\n\'\n \'    
+    <li>Tour: 10 days tour</li>\\n\'\n \'        <li>Start Date: Dec. 19, 2024</li>\\n\'\n \'        <li>End Date: Dec. 28, 2024</li>\\n\'\n \'        <li>Itinerary: 10 day tour</li>\\n\'\n \'
+\\n\'\n \'    </ul>\\n\'\n \'    <p>A PDF document with your reservation details is attached to this \'\n \'email.</p>\\n\'\n \'    <p>Best regards,</p>\\n\'\n \'    <p>Royal Travel</p>\\n\'\n
+ \'</body>\\n\'\n \'</html>\\n\')'), ('email', '<django.core.mail.message.EmailMultiAlternatives object at 0x0000017845313AA0>'), ('pdf', '<_io.BytesIO object at 0x00000178458DDF30>')], 'id': 
+1616075148032, 'pre_context': ['        to_email = self.user.email', "        text_content = render_to_string('reservations/reservation_confirmation_email.txt', {'reservation': self})", "     
+   html_content = render_to_string('reservations/reservation_confirmation_email.html', {'reservation': self})", '        email = EmailMultiAlternatives(subject, text_content, from_email, [to_e
+mail])', '        email.attach_alternative(html_content, "text/html")', '        pdf = generate_reservation_pdf(self)', "        email.attach(f'Reservation_{self.reservation_reference}.pdf', p
+df.read(), 'application/pdf')"], 'context_line': '        email.send()', 'post_context': ['', '    def check_and_update_status(self):', "        if self.status == 'active' and self.end_date < 
+date.today().date():", "            self.status = 'completed'", '            self.save()', ''], 'pre_context_lineno': 49, 'colno': '\n            ^^^^^^^^^^^^', 'tb_area_colno': '\n    ^^^^^^^
+^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x000001784595CE00>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\si
+te-packages\\django\\core\\mail\\message.py', 'function': 'send', 'lineno': 301, 'vars': [('self', '<django.core.mail.message.EmailMultiAlternatives object at 0x0000017845313AA0>'), ('fail_sil
+ently', 'False')], 'id': 1616075148800, 'pre_context': ['', '    def send(self, fail_silently=False):', '        """Send the email message."""', '        if not self.recipients():', "
+   # Don't bother creating the network connection if there's nobody to", '            # send to.', '            return 0'], 'context_line': '        return self.get_connection(fail_silently).s
+end_messages([self])', 'post_context': ['', '    def attach(self, filename=None, content=None, mimetype=None):', '        """', '        Attach a file with the given filename and content. The 
+filename can', '        be omitted and the mimetype is guessed, if not provided.', ''], 'pre_context_lineno': 294, 'colno': '\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^', 'tb_area_colno': '\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x0000017845
+95EF00>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\core\\mail\\backends\\smtp.py', 'function': 'send_messages', 'lineno': 128,
+ 'vars': [('self', '<django.core.mail.backends.smtp.EmailBackend object at 0x00000178454244D0>'), ('email_messages', '[<django.core.mail.message.EmailMultiAlternatives object at 0x000001784531
+3AA0>]')], 'id': 1616075157248, 'pre_context': ['        """', '        Send one or more EmailMessage objects and return the number of email', '        messages sent.', '        """', '       
+ if not email_messages:', '            return 0', '        with self._lock:'], 'context_line': '            new_conn_created = self.open()', 'post_context': ['            if not self.connectio
+n or new_conn_created is None:', '                # We failed silently on open().', '                # Trying to send would be pointless.', '                return 0', '            num_sent = 
+0', '            try:'], 'pre_context_lineno': 121, 'colno': '\n                                    ^^^^^^^^^^^', 'tb_area_colno': '\n                       ^^^^^^^^^^^'}, {'exc_cause': None, 
+'exc_cause_explicit': None, 'tb': <traceback object at 0x000001784595C800>, 'type': 'django', 'filename': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages\\django\\core\\ma
+il\\backends\\smtp.py', 'function': 'open', 'lineno': 86, 'vars': [('self', '<django.core.mail.backends.smtp.EmailBackend object at 0x00000178454244D0>'), ('connection_params', "{'local_hostna
+me': 'DESKTOP-JBCKEPM'}")], 'id': 1616075147264, 'pre_context': ['        # For performance, we use the cached FQDN for local_hostname.', '        connection_params = {"local_hostname": DNS_NA
+ME.get_fqdn()}', '        if self.timeout is not None:', '            connection_params["timeout"] = self.timeout', '        if self.use_ssl:', '            connection_params["context"] = self
+.ssl_context', '        try:'], 'context_line': '            self.connection = self.connection_class(', 'post_context': ['                self.host, self.port, **connection_params', '
+   )', '', '            # TLS/SSL are mutually exclusive, so only attempt TLS over', '            # non-secure connections.', '            if not self.use_ssl and self.use_tls:'], 'pre_context
+_lineno': 79, 'colno': '\n                                  ', 'tb_area_colno': '\n                      '}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x000001
+78458C0A80>, 'type': 'user', 'filename': 'C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\smtplib.py', 'function': '__init__', 'lineno': 255, 'vars': [('self', '<smtplib.SM
+TP object at 0x00000178453AF980>'), ('host', "'smtp.gmail.com'"), ('port', '25'), ('local_hostname', "'DESKTOP-JBCKEPM'"), ('timeout', '<object object at 0x0000017841098920>'), ('source_addres
+s', 'None')], 'id': 1616074508928, 'pre_context': ['        self.timeout = timeout', '        self.esmtp_features = {}', "        self.command_encoding = 'ascii'", '        self.source_address
+ = source_address', '        self._auth_challenge_count = 0', '', '        if host:'], 'context_line': '            (code, msg) = self.connect(host, port)', 'post_context': ['            if co
+de != 220:', '                self.close()', '                raise SMTPConnectError(code, msg)', '        if local_hostname is not None:', '            self.local_hostname = local_hostname', 
+'        else:'], 'pre_context_lineno': 248, 'colno': '\n                               ^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n                  ^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause
+': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x00000178458C0680>, 'type': 'user', 'filename': 'C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\smtplib.py
+', 'function': 'connect', 'lineno': 341, 'vars': [('self', '<smtplib.SMTP object at 0x00000178453AF980>'), ('host', "'smtp.gmail.com'"), ('port', '25'), ('source_address', 'None')], 'id': 1616
+074507904, 'pre_context': ['                try:', '                    port = int(port)', '                except ValueError:', '                    raise OSError("nonnumeric port")', '      
+  if not port:', '            port = self.default_port', '        sys.audit("smtplib.connect", self, host, port)'], 'context_line': '        self.sock = self._get_socket(host, port, self.timeo
+ut)', 'post_context': ['        self.file = None', '        (code, msg) = self.getreply()', '        if self.debuglevel > 0:', "            self._print_debug('connect:', repr(msg))", '        
+return (code, msg)', ''], 'pre_context_lineno': 334, 'colno': '\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n                ^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x00000178458C3040>, 'type': 'user', 'filename': 'C:\\Users\\ucha9\\AppData\\Local\\Programs
+\\Python\\Python312\\Lib\\smtplib.py', 'function': '_get_socket', 'lineno': 312, 'vars': [('self', '<smtplib.SMTP object at 0x00000178453AF980>'), ('host', "'smtp.gmail.com'"), ('port', '25'),
+ ('timeout', '<object object at 0x0000017841098920>')], 'id': 1616074518592, 'pre_context': ['    def _get_socket(self, host, port, timeout):', '        # This makes it simpler for SMTP_SSL to
+ use the SMTP connect code', '        # and just alter the socket connection bit.', '        if timeout is not None and not timeout:', "            raise ValueError('Non-blocking socket (timeo
+ut=0) is not supported')", '        if self.debuglevel > 0:', "            self._print_debug('connect: to', (host, port), self.source_address)"], 'context_line': '        return socket.create_
+connection((host, port), timeout,', 'post_context': ['                                        self.source_address)', '', "    def connect(self, host='localhost', port=0, source_address=None):"
+, '        """Connect to a host on a given port.', '', "        If the hostname ends with a colon (`:') followed by a number, and"], 'pre_context_lineno': 305, 'colno': '\n
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback
+ object at 0x00000178458C1780>, 'type': 'user', 'filename': 'C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\socket.py', 'function': 'create_connection', 'lineno': 852, 'va
+rs': [('address', "('smtp.gmail.com', 25)"), ('timeout', '<object object at 0x0000017841098920>'), ('source_address', 'None'), ('all_errors', 'False'), ('host', "'smtp.gmail.com'"), ('port', '
+25'), ('exceptions', '[]'), ('res', "(<AddressFamily.AF_INET: 2>,\n <SocketKind.SOCK_STREAM: 1>,\n 0,\n '',\n ('108.177.15.109', 25))"), ('af', '<AddressFamily.AF_INET: 2>'), ('socktype', '<So
+cketKind.SOCK_STREAM: 1>'), ('proto', '0'), ('canonname', "''"), ('sa', "('108.177.15.109', 25)"), ('sock', '<socket.socket [closed] fd=-1, family=2, type=1, proto=0>')], 'id': 1616074512256, 
+'pre_context': ['            exceptions.append(exc)', '            if sock is not None:', '                sock.close()', '', '    if len(exceptions):', '        try:', '            if not all
+_errors:'], 'context_line': '                raise exceptions[0]', 'post_context': ['            raise ExceptionGroup("create_connection failed", exceptions)', '        finally:', '
+ # Break explicitly a reference cycle', '            exceptions.clear()', '    else:', '        raise error("getaddrinfo returns an empty list")'], 'pre_context_lineno': 845, 'colno': '\n     
+                ^^^^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n    ^^^^^^^^^^^^^^^^^^^'}, {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x0000017845988880>, 'type': 'us
+er', 'filename': 'C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\socket.py', 'function': 'create_connection', 'lineno': 837, 'vars': [('address', "('smtp.gmail.com', 25)")
+, ('timeout', '<object object at 0x0000017841098920>'), ('source_address', 'None'), ('all_errors', 'False'), ('host', "'smtp.gmail.com'"), ('port', '25'), ('exceptions', '[]'), ('res', "(<Addr
+essFamily.AF_INET: 2>,\n <SocketKind.SOCK_STREAM: 1>,\n 0,\n '',\n ('108.177.15.109', 25))"), ('af', '<AddressFamily.AF_INET: 2>'), ('socktype', '<SocketKind.SOCK_STREAM: 1>'), ('proto', '0'),
+ ('canonname', "''"), ('sa', "('108.177.15.109', 25)"), ('sock', '<socket.socket [closed] fd=-1, family=2, type=1, proto=0>')], 'id': 1616075327616, 'pre_context': ['        sock = None', '   
+     try:', '            sock = socket(af, socktype, proto)', '            if timeout is not _GLOBAL_DEFAULT_TIMEOUT:', '                sock.settimeout(timeout)', '            if source_addre
+ss:', '                sock.bind(source_address)'], 'context_line': '            sock.connect(sa)', 'post_context': ['            # Break explicitly a reference cycle', '            exceptions
+.clear()', '            return sock', '', '        except error as exc:', '            if not all_errors:'], 'pre_context_lineno': 830, 'colno': '\n                 ^^^^^^^^^^^^^^^^', 'tb_area
+_colno': '\n    ^^^^^^^^^^^^^^^^'}], 'request': <WSGIRequest: POST '/reservations/create/6/'>, 'request_meta': {'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL', 'PSEXEC
+UTIONPOLICYPREFERENCE': 'RemoteSigned', 'PSMODULEPATH': 'C:\\Users\\ucha9\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPow
+erShell\\v1.0\\Modules', 'GOOGLE_DEFAULT_CLIENT_SECRET': '********************', 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)', 'TERM_SESSION_ID': '160daeaf-5375-4bae-8feb-50229b62cfd6', 'COM
+MONPROGRAMW6432': 'C:\\Program Files\\Common Files', 'PROGRAMW6432': 'C:\\Program Files', 'USERNAME': 'ucha9', 'ALLUSERSPROFILE': 'C:\\ProgramData', 'USERPROFILE': 'C:\\Users\\ucha9', 'OS': 'W
+indows_NT', 'GOOGLE_DEFAULT_CLIENT_ID': 'no', 'PROCESSOR_ARCHITECTURE': 'AMD64', 'IDEA_INITIAL_DIRECTORY': 'C:\\Program Files\\JetBrains\\PyCharm 2023.3.2\\bin', 'NUMBER_OF_PROCESSORS': '4', '
+COMSPEC': 'C:\\WINDOWS\\system32\\cmd.exe', 'FPS_BROWSER_APP_PROFILE_STRING': 'Internet Explorer', 'PROCESSOR_LEVEL': '6', 'PATH': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Scripts;C:\
+\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program F
+iles\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\1
+70\\Tools\\Binn\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\ucha9\\AppData\\Local\\Programs\\Pyt
+hon\\Python312\\Scripts\\;C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Python312\\;C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Launcher\\;C:\\Users\\ucha9\\AppData\\Local\\Micro
+soft\\WindowsApps;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Users\\ucha9\\.dotnet\\tools;C:\\Program Files\\heroku\\bin;C:\\Users\\ucha
+9\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\DataGrip 2024.1\\bin;', 'DATAGRIP': 'C:\\Program Files\\JetBrains\\DataGrip 2024.1\\bin;', 'USERDOMAIN_ROAMING
+PROFILE': 'DESKTOP-JBCKEPM', 'VIRTUAL_ENV': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv', 'VIRTUAL_ENV_PROMPT': 'venv', 'WINDIR': 'C:\\WINDOWS', 'DRIVERDATA': 'C:\\Windows\\System32\\Driv
+ers\\DriverData', 'HOMEDRIVE': 'C:', 'PROGRAMFILES': 'C:\\Program Files', 'SESSIONNAME': 'Console', 'LOGONSERVER': '\\\\DESKTOP-JBCKEPM', 'TERMINAL_EMULATOR': 'JetBrains-JediTerm', 'PUBLIC': '
+C:\\Users\\Public', 'PROCESSOR_REVISION': '4501', 'TEMP': 'C:\\Users\\ucha9\\AppData\\Local\\Temp', 'HOMEPATH': '\\Users\\ucha9', 'SYSTEMROOT': 'C:\\WINDOWS', 'COMMONPROGRAMFILES(X86)': 'C:\\P
+rogram Files (x86)\\Common Files', 'ONEDRIVE': 'C:\\Users\\ucha9\\OneDrive', 'ONEDRIVECONSUMER': 'C:\\Users\\ucha9\\OneDrive', 'USERDOMAIN': 'DESKTOP-JBCKEPM', 'SYSTEMDRIVE': 'C:', 'TMP': 'C:\
+\Users\\ucha9\\AppData\\Local\\Temp', 'COMPUTERNAME': 'DESKTOP-JBCKEPM', 'PROGRAMDATA': 'C:\\ProgramData', 'LOCALAPPDATA': 'C:\\Users\\ucha9\\AppData\\Local', 'FPS_BROWSER_USER_PROFILE_STRING'
+: 'Default', 'APPDATA': 'C:\\Users\\ucha9\\AppData\\Roaming', 'COMMONPROGRAMFILES': 'C:\\Program Files\\Common Files', 'GOOGLE_API_KEY': '********************', 'PROCESSOR_IDENTIFIER': 'Intel6
+4 Family 6 Model 69 Stepping 1, GenuineIntel', '_OLD_VIRTUAL_PATH': 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\
+\System32\\OpenSSH\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\To
+ols\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\MySQL
+\\MySQL Shell 8.0\\bin\\;C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\;C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Python312\\;C:\\Users\\ucha9\\AppData\\Loc
+al\\Programs\\Python\\Launcher\\;C:\\Users\\ucha9\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Use
+rs\\ucha9\\.dotnet\\tools;C:\\Program Files\\heroku\\bin;C:\\Users\\ucha9\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\DataGrip 2024.1\\bin;', 'DJANGO_SETTIN
+GS_MODULE': 'royaltravel.settings', 'RUN_MAIN': 'true', 'SERVER_NAME': 'ood.opsource.net', 'GATEWAY_INTERFACE': 'CGI/1.1', 'SERVER_PORT': '8000', 'REMOTE_HOST': '', 'CONTENT_LENGTH': '535', 'S
+CRIPT_NAME': '', 'SERVER_PROTOCOL': 'HTTP/1.1', 'SERVER_SOFTWARE': 'WSGIServer/0.2', 'REQUEST_METHOD': 'POST', 'PATH_INFO': '/reservations/create/6/', 'QUERY_STRING': '', 'REMOTE_ADDR': '127.0
+.0.1', 'CONTENT_TYPE': 'multipart/form-data; boundary=----WebKitFormBoundary0bx1bGAdLVl7XXmA', 'HTTP_HOST': '127.0.0.1:8000', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_CACHE_CONTROL': 'max-age=0'
+, 'HTTP_SEC_CH_UA': '"Not/A)Brand";v="8", "Chromium";v="126", "Microsoft Edge";v="126"', 'HTTP_SEC_CH_UA_MOBILE': '?0', 'HTTP_SEC_CH_UA_PLATFORM': '"Windows"', 'HTTP_UPGRADE_INSECURE_REQUESTS'
+: '1', 'HTTP_ORIGIN': 'http://127.0.0.1:8000', 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0
+', 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'HTTP_SEC_FETCH_SITE': 'same-origin
+', 'HTTP_SEC_FETCH_MODE': 'navigate', 'HTTP_SEC_FETCH_USER': '?1', 'HTTP_SEC_FETCH_DEST': 'document', 'HTTP_REFERER': 'http://127.0.0.1:8000/reservations/create/6/', 'HTTP_ACCEPT_ENCODING': 'g
+zip, deflate, br, zstd', 'HTTP_ACCEPT_LANGUAGE': 'en-US,en;q=0.9', 'HTTP_COOKIE': '********************', 'wsgi.input': <django.core.handlers.wsgi.LimitedStream object at 0x0000017845944940>, 
+'wsgi.errors': <_io.TextIOWrapper name='<stderr>' mode='w' encoding='utf-8'>, 'wsgi.version': (1, 0), 'wsgi.run_once': False, 'wsgi.url_scheme': 'http', 'wsgi.multithread': True, 'wsgi.multipr
+ocess': False, 'wsgi.file_wrapper': <class 'wsgiref.util.FileWrapper'>, 'CSRF_COOKIE': 'qEFc3ANWw3FQstiMlZ8sh7CvHRaSL5QI'}, 'request_COOKIES_items': dict_items([('csrftoken', '****************
+****'), ('sessionid', '********************')]), 'user_str': 'sopio', 'filtered_POST_items': [('csrfmiddlewaretoken', 'uflXkvHRomjTiiwAObjazl98l8sF01inKJQZdVkDKfOzABEcZ0hsGiBtSPsnBWYV'), ('sta
+rt_date', '2024-12-19'), ('number_of_people', '1'), ('full_name', 'Ucha Khmaladze')], 'settings': {'ABSOLUTE_URL_OVERRIDES': {}, 'ADMINS': [], 'ALLOWED_HOSTS': [], 'APPEND_SLASH': True, 'AUTHE
+NTICATION_BACKENDS': ('django.contrib.auth.backends.ModelBackend', 'users.authentication.EmailOrUsernameModelBackend'), 'AUTH_PASSWORD_VALIDATORS': '********************', 'AUTH_USER_MODEL': '
+users.CustomUser', 'BASE_DIR': WindowsPath('C:/Users/ucha9/PycharmProjects/royaltravel'), 'CACHES': {'default': {'BACKEND': 'django.core.cache.backends.locmem.LocMemCache'}}, 'CACHE_MIDDLEWARE
+_ALIAS': 'default', 'CACHE_MIDDLEWARE_KEY_PREFIX': '********************', 'CACHE_MIDDLEWARE_SECONDS': 600, 'CELERY_BEAT_SCHEDULE': {'update_reservation_statuses': {'task': 'royaltravel.tasks.
+update_reservation_statuses', 'schedule': <crontab: 0 0 * * * (m/h/dM/MY/d)>}}, 'CELERY_BROKER_URL': 'redis://localhost:6379/0', 'CELERY_RESULT_BACKEND': 'redis://localhost:6379/0', 'CSRF_COOK
+IE_AGE': 31449600, 'CSRF_COOKIE_DOMAIN': None, 'CSRF_COOKIE_HTTPONLY': False, 'CSRF_COOKIE_NAME': 'csrftoken', 'CSRF_COOKIE_PATH': '/', 'CSRF_COOKIE_SAMESITE': 'Lax', 'CSRF_COOKIE_SECURE': Fal
+se, 'CSRF_FAILURE_VIEW': 'django.views.csrf.csrf_failure', 'CSRF_HEADER_NAME': 'HTTP_X_CSRFTOKEN', 'CSRF_TRUSTED_ORIGINS': [], 'CSRF_USE_SESSIONS': False, 'DATABASES': {'default': {'ENGINE': '
+django.db.backends.postgresql', 'NAME': 'royaltravel', 'USER': 'postgres', 'PASSWORD': '********************', 'HOST': 'localhost', 'PORT': '5432', 'ATOMIC_REQUESTS': False, 'AUTOCOMMIT': True
+, 'CONN_MAX_AGE': 0, 'CONN_HEALTH_CHECKS': False, 'OPTIONS': {}, 'TIME_ZONE': None, 'TEST': {'CHARSET': None, 'COLLATION': None, 'MIGRATE': True, 'MIRROR': None, 'NAME': None}}}, 'DATABASE_ROU
+TERS': [], 'DATA_UPLOAD_MAX_MEMORY_SIZE': 2621440, 'DATA_UPLOAD_MAX_NUMBER_FIELDS': 1000, 'DATA_UPLOAD_MAX_NUMBER_FILES': 100, 'DATETIME_FORMAT': 'N j, Y, P', 'DATETIME_INPUT_FORMATS': ['%Y-%m
+-%d %H:%M:%S', '%Y-%m-%d %H:%M:%S.%f', '%Y-%m-%d %H:%M', '%m/%d/%Y %H:%M:%S', '%m/%d/%Y %H:%M:%S.%f', '%m/%d/%Y %H:%M', '%m/%d/%y %H:%M:%S', '%m/%d/%y %H:%M:%S.%f', '%m/%d/%y %H:%M'], 'DATE_FO
+RMAT': 'N j, Y', 'DATE_INPUT_FORMATS': ['%Y-%m-%d', '%m/%d/%Y', '%m/%d/%y', '%b %d %Y', '%b %d, %Y', '%d %b %Y', '%d %b, %Y', '%B %d %Y', '%B %d, %Y', '%d %B %Y', '%d %B, %Y'], 'DEBUG': True, 
+'DEBUG_PROPAGATE_EXCEPTIONS': False, 'DECIMAL_SEPARATOR': '.', 'DEFAULT_AUTO_FIELD': 'django.db.models.BigAutoField', 'DEFAULT_CHARSET': 'utf-8', 'DEFAULT_EXCEPTION_REPORTER': 'django.views.de
+bug.ExceptionReporter', 'DEFAULT_EXCEPTION_REPORTER_FILTER': 'django.views.debug.SafeExceptionReporterFilter', 'DEFAULT_FILE_STORAGE': 'django.core.files.storage.FileSystemStorage', 'DEFAULT_F
+ROM_EMAIL': 'ucha95@gmail.com', 'DEFAULT_INDEX_TABLESPACE': '', 'DEFAULT_TABLESPACE': '', 'DISALLOWED_USER_AGENTS': [], 'EMAIL_BACKEND': 'django.core.mail.backends.smtp.EmailBackend', 'EMAIL_H
+OST': 'smtp.gmail.com', 'EMAIL_HOST_PASSWORD': '********************', 'EMAIL_HOST_PORT': 587, 'EMAIL_HOST_USER': 'ucha95@gmail.com', 'EMAIL_PORT': 25, 'EMAIL_SSL_CERTFILE': None, 'EMAIL_SSL_K
+EYFILE': '********************', 'EMAIL_SUBJECT_PREFIX': '[Django] ', 'EMAIL_TIMEOUT': None, 'EMAIL_USE_LOCALTIME': False, 'EMAIL_USE_SSL': False, 'EMAIL_USE_TLS': True, 'FILE_UPLOAD_DIRECTORY
+_PERMISSIONS': None, 'FILE_UPLOAD_HANDLERS': ['django.core.files.uploadhandler.MemoryFileUploadHandler', 'django.core.files.uploadhandler.TemporaryFileUploadHandler'], 'FILE_UPLOAD_MAX_MEMORY_
+SIZE': 2621440, 'FILE_UPLOAD_PERMISSIONS': 420, 'FILE_UPLOAD_TEMP_DIR': None, 'FIRST_DAY_OF_WEEK': 0, 'FIXTURE_DIRS': [], 'FORCE_SCRIPT_NAME': None, 'FORMAT_MODULE_PATH': None, 'FORMS_URLFIELD
+_ASSUME_HTTPS': False, 'FORM_RENDERER': 'django.forms.renderers.DjangoTemplates', 'IGNORABLE_404_URLS': [], 'INSTALLED_APPS': ['django.contrib.admin', 'django.contrib.auth', 'django.contrib.co
+ntenttypes', 'django.contrib.sessions', 'django.contrib.messages', 'django.contrib.staticfiles', 'users', 'tours', 'reservations', 'django_filters'], 'INTERNAL_IPS': [], 'LANGUAGES': [('af', '
+Afrikaans'), ('ar', 'Arabic'), ('ar-dz', 'Algerian Arabic'), ('ast', 'Asturian'), ('az', 'Azerbaijani'), ('bg', 'Bulgarian'), ('be', 'Belarusian'), ('bn', 'Bengali'), ('br', 'Breton'), ('bs', 
+'Bosnian'), ('ca', 'Catalan'), ('ckb', 'Central Kurdish (Sorani)'), ('cs', 'Czech'), ('cy', 'Welsh'), ('da', 'Danish'), ('de', 'German'), ('dsb', 'Lower Sorbian'), ('el', 'Greek'), ('en', 'Eng
+lish'), ('en-au', 'Australian English'), ('en-gb', 'British English'), ('eo', 'Esperanto'), ('es', 'Spanish'), ('es-ar', 'Argentinian Spanish'), ('es-co', 'Colombian Spanish'), ('es-mx', 'Mexi
+can Spanish'), ('es-ni', 'Nicaraguan Spanish'), ('es-ve', 'Venezuelan Spanish'), ('et', 'Estonian'), ('eu', 'Basque'), ('fa', 'Persian'), ('fi', 'Finnish'), ('fr', 'French'), ('fy', 'Frisian')
+, ('ga', 'Irish'), ('gd', 'Scottish Gaelic'), ('gl', 'Galician'), ('he', 'Hebrew'), ('hi', 'Hindi'), ('hr', 'Croatian'), ('hsb', 'Upper Sorbian'), ('hu', 'Hungarian'), ('hy', 'Armenian'), ('ia
+', 'Interlingua'), ('id', 'Indonesian'), ('ig', 'Igbo'), ('io', 'Ido'), ('is', 'Icelandic'), ('it', 'Italian'), ('ja', 'Japanese'), ('ka', 'Georgian'), ('kab', 'Kabyle'), ('kk', 'Kazakh'), ('k
+m', 'Khmer'), ('kn', 'Kannada'), ('ko', 'Korean'), ('ky', 'Kyrgyz'), ('lb', 'Luxembourgish'), ('lt', 'Lithuanian'), ('lv', 'Latvian'), ('mk', 'Macedonian'), ('ml', 'Malayalam'), ('mn', 'Mongol
+ian'), ('mr', 'Marathi'), ('ms', 'Malay'), ('my', 'Burmese'), ('nb', 'Norwegian Bokmål'), ('ne', 'Nepali'), ('nl', 'Dutch'), ('nn', 'Norwegian Nynorsk'), ('os', 'Ossetic'), ('pa', 'Punjabi'), 
+('pl', 'Polish'), ('pt', 'Portuguese'), ('pt-br', 'Brazilian Portuguese'), ('ro', 'Romanian'), ('ru', 'Russian'), ('sk', 'Slovak'), ('sl', 'Slovenian'), ('sq', 'Albanian'), ('sr', 'Serbian'), 
+('sr-latn', 'Serbian Latin'), ('sv', 'Swedish'), ('sw', 'Swahili'), ('ta', 'Tamil'), ('te', 'Telugu'), ('tg', 'Tajik'), ('th', 'Thai'), ('tk', 'Turkmen'), ('tr', 'Turkish'), ('tt', 'Tatar'), (
+'udm', 'Udmurt'), ('ug', 'Uyghur'), ('uk', 'Ukrainian'), ('ur', 'Urdu'), ('uz', 'Uzbek'), ('vi', 'Vietnamese'), ('zh-hans', 'Simplified Chinese'), ('zh-hant', 'Traditional Chinese')], 'LANGUAG
+ES_BIDI': ['he', 'ar', 'ar-dz', 'ckb', 'fa', 'ug', 'ur'], 'LANGUAGE_CODE': 'en-us', 'LANGUAGE_COOKIE_AGE': None, 'LANGUAGE_COOKIE_DOMAIN': None, 'LANGUAGE_COOKIE_HTTPONLY': False, 'LANGUAGE_CO
+OKIE_NAME': 'django_language', 'LANGUAGE_COOKIE_PATH': '/', 'LANGUAGE_COOKIE_SAMESITE': None, 'LANGUAGE_COOKIE_SECURE': False, 'LOCALE_PATHS': [], 'LOGGING': {'version': 1, 'disable_existing_l
+oggers': False, 'handlers': {'console': {'class': 'logging.StreamHandler'}, 'file': {'class': 'logging.FileHandler', 'filename': 'django_email.log'}}, 'loggers': {'django': {'handlers': ['cons
+ole', 'file'], 'level': 'DEBUG'}, 'django.request': {'handlers': ['console', 'file'], 'level': 'DEBUG', 'propagate': False}, 'django.security.SuspiciousOperation': {'handlers': ['console', 'fi
+le'], 'level': 'DEBUG', 'propagate': False}}}, 'LOGGING_CONFIG': 'logging.config.dictConfig', 'LOGIN_REDIRECT_URL': '/accounts/profile/', 'LOGIN_URL': 'login', 'LOGOUT_REDIRECT_URL': None, 'MA
+NAGERS': [], 'MEDIA_ROOT': 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\media', 'MEDIA_URL': '/media/', 'MESSAGE_STORAGE': 'django.contrib.messages.storage.fallback.FallbackStorage', 'MIDD
+LEWARE': ['django.middleware.security.SecurityMiddleware', 'django.contrib.sessions.middleware.SessionMiddleware', 'django.middleware.common.CommonMiddleware', 'django.middleware.csrf.CsrfView
+Middleware', 'django.contrib.auth.middleware.AuthenticationMiddleware', 'django.contrib.messages.middleware.MessageMiddleware', 'django.middleware.clickjacking.XFrameOptionsMiddleware', 'royal
+travel.middleware.Redirect404Middleware', 'royaltravel.middleware.RedirectNotPermittedMiddleware'], 'MIGRATION_MODULES': {}, 'MONTH_DAY_FORMAT': 'F j', 'NUMBER_GROUPING': 0, 'PASSWORD_HASHERS'
+: '********************', 'PASSWORD_RESET_TIMEOUT': '********************', 'PREPEND_WWW': False, 'ROOT_URLCONF': 'royaltravel.urls', 'SECRET_KEY': '********************', 'SECRET_KEY_FALLBACK
+S': '********************', 'SECURE_CONTENT_TYPE_NOSNIFF': True, 'SECURE_CROSS_ORIGIN_OPENER_POLICY': 'same-origin', 'SECURE_HSTS_INCLUDE_SUBDOMAINS': False, 'SECURE_HSTS_PRELOAD': False, 'SEC
+URE_HSTS_SECONDS': 0, 'SECURE_PROXY_SSL_HEADER': None, 'SECURE_REDIRECT_EXEMPT': [], 'SECURE_REFERRER_POLICY': 'same-origin', 'SECURE_SSL_HOST': None, 'SECURE_SSL_REDIRECT': False, 'SERVER_EMA
+IL': 'root@localhost', 'SESSION_CACHE_ALIAS': 'default', 'SESSION_COOKIE_AGE': 1209600, 'SESSION_COOKIE_DOMAIN': None, 'SESSION_COOKIE_HTTPONLY': True, 'SESSION_COOKIE_NAME': 'sessionid', 'SES
+SION_COOKIE_PATH': '/', 'SESSION_COOKIE_SAMESITE': 'Lax', 'SESSION_COOKIE_SECURE': False, 'SESSION_ENGINE': 'django.contrib.sessions.backends.db', 'SESSION_EXPIRE_AT_BROWSER_CLOSE': False, 'SE
+SSION_FILE_PATH': None, 'SESSION_SAVE_EVERY_REQUEST': False, 'SESSION_SERIALIZER': 'django.contrib.sessions.serializers.JSONSerializer', 'SETTINGS_MODULE': 'royaltravel.settings', 'SHORT_DATET
+IME_FORMAT': 'm/d/Y P', 'SHORT_DATE_FORMAT': 'm/d/Y', 'SIGNING_BACKEND': 'django.core.signing.TimestampSigner', 'SILENCED_SYSTEM_CHECKS': [], 'SITE_URL': 'http://localhost:8000', 'STATICFILES_
+DIRS': [WindowsPath('C:/Users/ucha9/PycharmProjects/royaltravel/static')], 'STATICFILES_FINDERS': ['django.contrib.staticfiles.finders.FileSystemFinder', 'django.contrib.staticfiles.finders.Ap
+pDirectoriesFinder'], 'STATICFILES_STORAGE': 'django.contrib.staticfiles.storage.StaticFilesStorage', 'STATIC_ROOT': None, 'STATIC_URL': '/static/', 'STORAGES': {'default': {'BACKEND': 'django
+.core.files.storage.FileSystemStorage'}, 'staticfiles': {'BACKEND': 'django.contrib.staticfiles.storage.StaticFilesStorage'}}, 'TEMPLATES': [{'BACKEND': 'django.template.backends.django.Django
+Templates', 'DIRS': [WindowsPath('C:/Users/ucha9/PycharmProjects/royaltravel/templates')], 'APP_DIRS': True, 'OPTIONS': {'context_processors': ['django.template.context_processors.debug', 'dja
+ngo.template.context_processors.request', 'django.contrib.auth.context_processors.auth', 'django.contrib.messages.context_processors.messages']}}], 'TEST_NON_SERIALIZED_APPS': [], 'TEST_RUNNER
+': 'django.test.runner.DiscoverRunner', 'THOUSAND_SEPARATOR': ',', 'TIME_FORMAT': 'P', 'TIME_INPUT_FORMATS': ['%H:%M:%S', '%H:%M:%S.%f', '%H:%M'], 'TIME_ZONE': 'UTC', 'USE_I18N': True, 'USE_TH
+OUSAND_SEPARATOR': False, 'USE_TZ': True, 'USE_X_FORWARDED_HOST': False, 'USE_X_FORWARDED_PORT': False, 'WSGI_APPLICATION': 'royaltravel.wsgi.application', 'X_FRAME_OPTIONS': 'DENY', 'YEAR_MON
+TH_FORMAT': 'F Y'}, 'sys_executable': 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Scripts\\python.exe', 'sys_version_info': '3.12.1', 'server_time': datetime.datetime(2024, 6, 18, 22, 58
+, 32, 58909, tzinfo=datetime.timezone.utc), 'django_version_info': '5.0.6', 'sys_path': ['C:\\Users\\ucha9\\PycharmProjects\\royaltravel', 'C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\
+Python312\\python312.zip', 'C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Python312\\DLLs', 'C:\\Users\\ucha9\\AppData\\Local\\Programs\\Python\\Python312\\Lib', 'C:\\Users\\ucha9\\AppDa
+ta\\Local\\Programs\\Python\\Python312', 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv', 'C:\\Users\\ucha9\\pycharmproject1\\royalt\\venv\\Lib\\site-packages'], 'template_info': None, 'temp
+late_does_not_exist': False, 'postmortem': None, 'request_GET_items': <generator object MultiValueDict.items at 0x00000178458E25A0>, 'request_FILES_items': <generator object MultiValueDict.ite
+ms at 0x00000178458E2400>, 'request_insecure_uri': 'http://127.0.0.1:8000/reservations/create/6/', 'raising_view_name': 'reservations.views.ReservationCreateView', 'exception_type': 'TimeoutEr
+ror', 'exception_value': '[WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because con
+nected host has failed to respond', 'lastframe': {'exc_cause': None, 'exc_cause_explicit': None, 'tb': <traceback object at 0x0000017845988880>, 'type': 'user', 'filename': 'C:\\Users\\ucha9\\
+AppData\\Local\\Programs\\Python\\Python312\\Lib\\socket.py', 'function': 'create_connection', 'lineno': 837, 'vars': [('address', "('smtp.gmail.com', 25)"), ('timeout', '<object object at 0x0
+000017841098920>'), ('source_address', 'None'), ('all_errors', 'False'), ('host', "'smtp.gmail.com'"), ('port', '25'), ('exceptions', '[]'), ('res', "(<AddressFamily.AF_INET: 2>,\n <SocketKind
+.SOCK_STREAM: 1>,\n 0,\n '',\n ('108.177.15.109', 25))"), ('af', '<AddressFamily.AF_INET: 2>'), ('socktype', '<SocketKind.SOCK_STREAM: 1>'), ('proto', '0'), ('canonname', "''"), ('sa', "('108.
+177.15.109', 25)"), ('sock', '<socket.socket [closed] fd=-1, family=2, type=1, proto=0>')], 'id': 1616075327616, 'pre_context': ['        sock = None', '        try:', '            sock = sock
+et(af, socktype, proto)', '            if timeout is not _GLOBAL_DEFAULT_TIMEOUT:', '                sock.settimeout(timeout)', '            if source_address:', '                sock.bind(sou
+rce_address)'], 'context_line': '            sock.connect(sa)', 'post_context': ['            # Break explicitly a reference cycle', '            exceptions.clear()', '            return sock'
+, '', '        except error as exc:', '            if not all_errors:'], 'pre_context_lineno': 830, 'colno': '\n                 ^^^^^^^^^^^^^^^^', 'tb_area_colno': '\n    ^^^^^^^^^^^^^^^^'}}]
+Internal Server Error: /reservations/create/6/
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\PycharmProjects\royaltravel\reservations\views.py", line 55, in form_valid
+    return super().form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\views\generic\edit.py", line 133, in form_valid
+    self.object = form.save()
+                  ^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\forms\models.py", line 552, in save
+    self.instance.save()
+  File "C:\Users\ucha9\PycharmProjects\royaltravel\reservations\models.py", line 36, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\db\models\base.py", line 924, in save_base
+    post_save.send(
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\dispatch\dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\PycharmProjects\royaltravel\reservations\signals.py", line 10, in generate_reference_code
+    instance.send_confirmation_email()
+  File "C:\Users\ucha9\PycharmProjects\royaltravel\reservations\models.py", line 56, in send_confirmation_email
+    email.send()
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 852, in create_connection
+    raise exceptions[0]
+  File "C:\Users\ucha9\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 837, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host 
+has failed to respond
+"POST /reservations/create/6/ HTTP/1.1" 500 170310
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\urls\resolvers.py", line 725, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel
+\\users\\urls.py'> (None:None) ''>, <URLPattern 'login/' [name='login']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None)
+ ''>, <URLPattern 'register/' [name='register']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'logou
+t/' [name='logout']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset/' [name='password_
+reset']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset/done/' [name='password_reset_d
+one']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset-confirm/<uidb64>/<token>/' [name
+='password_reset_confirm']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset-complete/' 
+[name='password_reset_complete']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'activate/<uidb64>/<t
+oken>/' [name='activate']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'account_activation_sent/' [
+name='account_activation_sent']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'resend_activation_ema
+il' [name='resend_activation_email']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'profile/' [name=
+'profile']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module '
+tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/' [name='tour-list']>], [<URLResolver <module 'tours.urls' from 'C:\\User
+s\\ucha9\\PycharmProjects\\royaltravel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/<int:pk>/' [name='tour-detail']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\Pycha
+rmProjects\\royaltravel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/create/' [name='tour-create']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royal
+travel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/<int:pk>/update/' [name='tour-update']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\
+tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/<int:pk>/delete/' [name='tour-delete']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\tours\\u
+rls.py'> (None:None) ''>, <URLPattern 'property/tours/' [name='property-tours']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\tours\\urls.py'> (No
+ne:None) ''>, <URLPattern 'poperty/reservations/' [name='property-reservations']>], [<URLResolver <module 'reservations.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\reservations
+\\urls.py'> (None:None) 'reservations/'>], [<URLPattern '^media/(?P<path>.*)$'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\urls\resolvers.py", line 725, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel
+\\users\\urls.py'> (None:None) ''>, <URLPattern 'login/' [name='login']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None)
+ ''>, <URLPattern 'register/' [name='register']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'logou
+t/' [name='logout']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset/' [name='password_
+reset']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset/done/' [name='password_reset_d
+one']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset-confirm/<uidb64>/<token>/' [name
+='password_reset_confirm']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'password-reset-complete/' 
+[name='password_reset_complete']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'activate/<uidb64>/<t
+oken>/' [name='activate']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'account_activation_sent/' [
+name='account_activation_sent']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'resend_activation_ema
+il' [name='resend_activation_email']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern 'profile/' [name=
+'profile']>], [<URLResolver <module 'users.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\users\\urls.py'> (None:None) ''>, <URLPattern '' [name='home']>], [<URLResolver <module '
+tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/' [name='tour-list']>], [<URLResolver <module 'tours.urls' from 'C:\\User
+s\\ucha9\\PycharmProjects\\royaltravel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/<int:pk>/' [name='tour-detail']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\Pycha
+rmProjects\\royaltravel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/create/' [name='tour-create']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royal
+travel\\tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/<int:pk>/update/' [name='tour-update']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\
+tours\\urls.py'> (None:None) ''>, <URLPattern 'tours/<int:pk>/delete/' [name='tour-delete']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\tours\\u
+rls.py'> (None:None) ''>, <URLPattern 'property/tours/' [name='property-tours']>], [<URLResolver <module 'tours.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\tours\\urls.py'> (No
+ne:None) ''>, <URLPattern 'poperty/reservations/' [name='property-reservations']>], [<URLResolver <module 'reservations.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\reservations
+\\urls.py'> (None:None) 'reservations/'>], [<URLPattern '^media/(?P<path>.*)$'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ucha9\pycharmproject1\royalt\venv\Lib\site-packages\django\template\base.py", line 898, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'reservations.urls' from 'C:\\Users\\ucha9\\PycharmProjects\\royaltravel\\reservations\\urls.py'
+> (None:None) 'reservations/'>
+"GET /favicon.ico HTTP/1.1" 302 0
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2024-06-18T22:58:3
+4.647277+00:00'::timestamptz AND "django_session"."session_key" = '5pj9r8zwmz0g7vahasmnu4faed74kx0b') LIMIT 21; args=(datetime.datetime(2024, 6, 18, 22, 58, 34, 647277, tzinfo=datetime.timezon
+e.utc), '5pj9r8zwmz0g7vahasmnu4faed74kx0b'); alias=default
+(0.000) SELECT "users_customuser"."id", "users_customuser"."password", "users_customuser"."last_login", "users_customuser"."is_superuser", "users_customuser"."username", "users_customuser"."fi
+rst_name", "users_customuser"."last_name", "users_customuser"."is_staff", "users_customuser"."is_active", "users_customuser"."date_joined", "users_customuser"."email", "users_customuser"."last
+_token_generated" FROM "users_customuser" WHERE "users_customuser"."id" = 52 LIMIT 21; args=(52,); alias=default
+"GET / HTTP/1.1" 200 3332
